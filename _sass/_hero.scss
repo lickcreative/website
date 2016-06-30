@@ -1,0 +1,63 @@
+.ken-burns {
+  &__container {
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    overflow: hidden;
+  }
+  &__image {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    object-fit: cover;
+    will-change: transform;
+    animation: ken-burns--portrait 25s linear infinite alternate;
+  }
+}
+
+.lick-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-45%, -55%);
+  display: block;
+  width: 90%;
+  height: auto;
+  max-width: 50rem;
+}
+
+@media (min-width: 40em) {
+  .ken-burns {
+    &__container {
+      position: relative;
+      width: 100%;
+      height: 56.25vw;
+      max-height: 33.75rem; //Maximum height before width is restricted by .container
+    }
+    &__image {
+      animation: ken-burns 60s linear infinite alternate;
+    }
+  }
+  @keyframes ken-burns {
+    from {
+      transform: scale(1) translate3d(0, 0, 0);
+    }
+    to {
+      transform: scale(1.2) translate3d(-5%, 35%, 0);
+    }
+  }
+  .lick-logo {
+    width: 60%;
+  }
+}
+
+@keyframes ken-burns--portrait {
+  from {
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+  to {
+    transform: scale(1.3) translate3d(0, 80px, 0);
+  }
+}

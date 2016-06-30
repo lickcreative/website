@@ -1,0 +1,86 @@
+.checkbox {
+  display: none;
+}
+
+.tabs {
+  position: relative;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  color: $text-color;
+  border: 3px solid $text-color;
+  &__label {
+    font-size: 2.25rem;
+    font-family: 'Raleway', Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: all 0.2s ease-in-out;
+    &:nth-child(2n) {
+      font-weight: 900;
+    }
+    &:hover {
+      color: $pink;
+    }
+    &__close {
+      position: absolute;
+      right: 0.35rem;
+      bottom: -2.125rem;
+      font-size: 2.5rem;
+      line-height: 1;
+      opacity: 0;
+    }
+  }
+  &__content {
+    margin-top: -3px;
+    margin-bottom: 2rem;
+    max-height: 0;
+    transition: max-height 0.2s ease-in;
+    & p {
+      margin: 0;
+      max-height: 0;
+      opacity: 0;
+      overflow-y: hidden;
+      // transform: translate3d(0, -10px, 0);
+      transition: opacity 0.5s 0.2s ease-in;
+    }
+  }
+}
+
+@for $i from 1 through 8 {
+  #input-#{$i}:checked ~ .tabs {
+      & #label-#{$i} {
+        color: $pink;
+    }
+    & #label-close {
+      opacity: 0.5;
+    }
+  }
+  #input-#{$i}:checked ~ .tabs__content {
+    padding: 1rem;
+    border: 3px solid $text-color;
+    max-height: 100%;
+    & #tab-#{$i} {
+    max-height: initial;
+    opacity: 1;
+    }
+  }
+}
+
+@media (min-width: 40em) {
+  .tabs {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    &__label {
+      font-size: 1.125rem;
+      &:not(:last-child) {
+        margin-right: 0.75rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+/* https://jakearchibald.com/2013/animated-line-drawing-svg/ */
+
+.path {
+  stroke-dasharray: 1750;
+  /* Set dash array to the length of the path */
+  stroke-dashoffset: 1750;
+  /* Set dash offset to the same length */
+}
+
+.path-dot {
+  stroke-dasharray: 83;
+  stroke-dashoffset: 83;
+}
+
+.path-splash {
+  stroke-dasharray: 73;
+  stroke-dashoffset: 73;
+}
+
+.draw {
+  animation: draw 6s 1s forwards;
+}
+
+.draw-dot {
+  animation: draw 2s 3s forwards;
+}
+
+.draw-splash {
+  animation: draw 0.35s 5.5s forwards;
+}
+/* Animates the dash offset back to zero, revealing the logo */
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

@@ -1,0 +1,47 @@
+//Image panels
+.panel {
+  position: relative;
+  padding: 1rem;
+  height: 18rem;
+  @include flex-center;
+  background: grey;
+  transition: background 0.25s ease-out;
+  overflow: hidden;
+  &__caption {
+    font-size: 4.5rem;
+    font-weight: 900;
+    line-height: 0.8;
+    color: #ffffff;
+    opacity: 0.75;
+    transition: opacity 0.4s ease-out;
+    will-change: opacity;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+// Video play icons [positioned to always sit in the bottom right corner]
+.play-icon {
+  position: absolute;
+  width: 3rem;
+  height: auto;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  opacity: 0.75;
+  transition: opacity 0.4s ease-out;
+  will-change: opacity;
+  transform: translate3d(0, 0, 0);
+}
+
+@media (min-width: 40em) {
+  .panel {
+    padding: 1.5rem;
+    &:hover {
+      & .panel__caption {
+        opacity: 1;
+      }
+      & .play-icon {
+        opacity: 1;
+      }
+    }
+  }
+}

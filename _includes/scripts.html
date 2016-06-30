@@ -1,0 +1,16 @@
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.3/headroom.min.js"></script>
+<script type="text/javascript">
+$('a[href^="#"]').on('click', function(event) {
+  var target = $( $(this).attr('href') );
+  if( target.length ) {
+      event.preventDefault();
+      $('html, body').animate({
+          scrollTop: target.offset().top
+      }, 800);
+  }
+});
+var myElement = document.getElementById("js-header");
+var headroom  = new Headroom(myElement);
+headroom.init();
+</script>
