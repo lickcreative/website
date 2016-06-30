@@ -10,7 +10,7 @@ title: Lick Creative | Where ideas come true
 email: oliver.phillips@lickcreative.com
 description: > # this means to ignore newlines until "baseurl:"
   Lick are a creative agency based in London.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "https://lickcreative.github.io/website/" # the subpath of your site, e.g. /blog
 url: "http://lickinnovation.github.io" # the base hostname & protocol for your site
 twitter_username: wearelick
 # github_username:  jekyll

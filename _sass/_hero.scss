@@ -37,15 +37,15 @@
       max-height: 33.75rem; //Maximum height before width is restricted by .container
     }
     &__image {
-      animation: ken-burns 60s linear infinite alternate;
+      animation: ken-burns 40s linear infinite alternate;
     }
   }
   @keyframes ken-burns {
     from {
-      transform: scale(1) translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
     }
     to {
-      transform: scale(1.2) translate3d(-5%, 35%, 0);
+      transform: translate3d(0, 600px, 0);
     }
   }
   .lick-logo {

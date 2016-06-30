@@ -22,6 +22,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
+    padding: 0 1rem 1rem 1rem;
     font-size: ($base-font-size / $base-font-size) * 100%;
     font-family: $base-font;
     font-weight: $base-font-weight;
