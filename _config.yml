@@ -1,23 +1,17 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
+---
 title: Lick Creative | Where ideas come true
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 email: oliver.phillips@lickcreative.com
-description: > # this means to ignore newlines until "baseurl:"
+description: |
   Lick are a creative agency based in London.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://lickinnovation.github.io" # the base hostname & protocol for your site
+baseurl: ''
+url: http://lickinnovation.github.io
 twitter_username: wearelick
-# github_username:  jekyll
-
-# Build settings
 markdown: kramdown
-
-# Gems
-# gems:
-# - jekyll-autoprefixer
