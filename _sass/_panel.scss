@@ -2,7 +2,7 @@
 .panel {
   position: relative;
   padding: 1rem;
-  height: 18rem;
+  height: 20rem;
   @include flex-center;
   background: grey;
   transition: background 0.25s ease-out;
