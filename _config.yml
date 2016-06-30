@@ -19,5 +19,5 @@ twitter_username: wearelick
 markdown: kramdown
 
 # Gems
-gems:
-- jekyll-autoprefixer
+# gems:
+# - jekyll-autoprefixer
