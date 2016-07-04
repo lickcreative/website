@@ -2,16 +2,16 @@
 title: Lick Creative | Where ideas come true
 timezone: UTC
 collections:
+  case_studies:
+    title: Case Studies
+    output: true
+    permalink: "/case_studies/:path/"
   posts:
     title: Posts
     output: true
   uploads:
     title: Uploads
     output: true
-  case_studies:
-    title: case_studies
-    output: true
-    permalink: "/case_studies/:path/"
 email: oliver.phillips@lickcreative.com
 description: |
   Lick are a creative agency based in London.
