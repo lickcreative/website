@@ -14,8 +14,8 @@ collections:
     output: true
 email: oliver.phillips@lickcreative.com
 description: |
-  Lick are a creative agency based in London.
-baseurl: ''
+  Lick is a creative agency based in London.
+baseurl: 
 url: https://lickcreative.github.io/
 twitter_username: wearelick
 markdown: kramdown
