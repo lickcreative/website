@@ -11,6 +11,6 @@ layout: default
   {% include tabs.html %}
 </section>
 
-<section class="section grid" id="work">
+<section class="section" id="work">
   {% include grid.html %}
 </section>
