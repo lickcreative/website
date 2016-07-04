@@ -19,7 +19,7 @@ layout: default
   <div class="cover">
     <div class="cover__box">
       <h1 class="cover__box__heading">Client Overview</h1>
-      <p class="cover__box__content">{{ page.client_overview }}</p>
+      <p class="cover__box__content">{{ case_study.client_overview }}</p>
     </div>
   </div>
 </section>
@@ -27,20 +27,20 @@ layout: default
   <div class="case-study">
     <div class="case-study__copy">
       <h2>Overview</h2>
-      <p>{{ page.overview }}</p>
+      <p>{{ case_study.overview }}</p>
       <h2>Media</h2>
-      <p>{{ page.media }}</p>
+      <p>{{ case_study.media }}</p>
       <h2>Results</h2>
-      <p>{{ page.results }}</p>
+      <p>{{ case_study.results }}</p>
     </div>
     <div class="case-study__img">
-      <img src="http://placehold.it/300x400" alt="" />
+      <img src="{{ images.1 }}" alt="" />
   </div>
     <div class="case-study__img">
-      <img src="http://placehold.it/300x400" alt="" />
+      <img src="{{ images.2 }}" alt="" />
   </div>
     <div class="case-study__img">
-      <img src="http://placehold.it/300x400" alt="" />
+      <img src="{{ images.3 }}" alt="" />
   </div>
   </div>
 </section>
