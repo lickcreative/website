@@ -34,10 +34,10 @@ layout: default
       <h2>Results</h2>
       <p>{{ page.case_study.results }}</p>
     </div>
-    {{% for image in page.assets %}}
+    {% for file in page.assets %}
       <div class="case-study__img">
-        <img src="{{ image }}" alt="" />
+        <img src="{{ file.image }}" alt="{{ file.alt }}" />
       </div>
-    {{% endfor % }}
+    {% endfor %}
   </div>
 </section>
