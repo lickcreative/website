@@ -2,7 +2,8 @@
 title: Tottenham Hotspur FC
 date: 2016-07-04 17:02:00 Z
 assets:
-- "/uploads/-text.png"
+- image: "/uploads/-text.png"
+  alt: Some alt text
 case_study:
   client_overview: For over three years, Lick has worked with one of the most dynamic
     football clubs in Europe. Helping to promote their new kit launches, on-line commerce
