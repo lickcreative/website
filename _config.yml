@@ -5,6 +5,10 @@ collections:
   posts:
     title: Posts
     output: true
+  case_studies:
+    title: case_studies
+    output: true
+    permalink: /case_studies/:path/
   uploads:
     title: Uploads
     output: true
