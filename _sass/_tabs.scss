@@ -4,11 +4,12 @@
 
 .tabs {
   position: relative;
+  margin-bottom: 1rem;
   padding: 1rem;
   display: flex;
   flex-direction: column;
   color: $text-color;
-  border: 3px solid $text-color;
+  border: 2px solid $text-color;
   &__label {
     font-size: 2.25rem;
     font-family: 'Raleway', Helvetica, sans-serif;
@@ -19,7 +20,7 @@
     cursor: pointer;
     outline: none;
     -webkit-tap-highlight-color: transparent;
-    transition: all 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
     &:nth-child(2n) {
       font-weight: 900;
     }
@@ -29,24 +30,28 @@
     &__close {
       position: absolute;
       right: 0.35rem;
-      bottom: -2.125rem;
+      bottom: -3.25rem;
       font-size: 2.5rem;
       line-height: 1;
       opacity: 0;
+      z-index: 10;
     }
   }
   &__content {
-    margin-top: -3px;
+    position: absolute;
     margin-bottom: 2rem;
     max-height: 0;
-    transition: max-height 0.2s ease-in;
+    background: #ffffff;
+    box-shadow: 2px 2px 1px hsla(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
     & p {
       margin: 0;
       max-height: 0;
       opacity: 0;
       overflow-y: hidden;
       // transform: translate3d(0, -10px, 0);
-      transition: opacity 0.5s 0.2s ease-in;
+      transition: opacity 0.2s ease-in;
     }
   }
 }
@@ -61,9 +66,10 @@
     }
   }
   #input-#{$i}:checked ~ .tabs__content {
-    padding: 1rem;
-    border: 3px solid $text-color;
+    padding: 2rem;
+    // border: 2px solid;
     max-height: 100%;
+    opacity: 1;
     & #tab-#{$i} {
     max-height: initial;
     opacity: 1;
@@ -76,7 +82,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    &__label {
+    &__label:not(#label-close) {
       font-size: 1.125rem;
       &:not(:last-child) {
         margin-right: 0.75rem;

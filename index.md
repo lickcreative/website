@@ -1,6 +1,8 @@
 ---
+title: Home
 layout: default
 ---
+
 <section class="section" id="home">
   {% include hero.html %}
 </section>
@@ -9,6 +11,6 @@ layout: default
   {% include tabs.html %}
 </section>
 
-<section class="section grid" id="work">
+<section class="section" id="work">
   {% include grid.html %}
 </section>
