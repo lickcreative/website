@@ -156,6 +156,9 @@ a {
     }
 }
 
-.section:not(:last-child) {
-  margin-bottom: 2rem;
+.section {
+  position: relative;
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
 }
