@@ -4,8 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  background: url('http://i0.wp.com/futebolmarketing.s3.amazonaws.com/wp-content/uploads/2015/12/tot-001.jpg') center center;
-  background-size: cover;
+  overflow: hidden;
   &__box {
     // width: 100%;
     // height: 100%;
