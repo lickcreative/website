@@ -19,8 +19,9 @@ layout: default
   <div class="cover">
     <div class="cover__box">
       <h1 class="cover__box__heading">Client Overview</h1>
-      <p class="cover__box__content">{{ case_study.client_overview }}</p>
+      <p class="cover__box__content">{{ page.case_study.client_overview }}</p>
     </div>
+    <img class="cover__img u-object-fit" src="{{ page.images.cover }}" alt="" />
   </div>
 </section>
 <section class="section">
@@ -33,14 +34,10 @@ layout: default
       <h2>Results</h2>
       <p>{{ case_study.results }}</p>
     </div>
-    <div class="case-study__img">
-      <img src="{{ images.1 }}" alt="" />
-  </div>
-    <div class="case-study__img">
-      <img src="{{ images.2 }}" alt="" />
-  </div>
-    <div class="case-study__img">
-      <img src="{{ images.3 }}" alt="" />
-  </div>
+    {{% for image in page.images %}}
+      <div class="case-study__img">
+        <img src="{{ image }}" alt="" />
+      </div>
+    {{% endfor % }}
   </div>
 </section>
