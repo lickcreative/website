@@ -31,13 +31,10 @@
 @media (min-width: 40em) {
   .ken-burns {
     &__container {
-      position: relative;
-      width: 100%;
-      height: 75vh;
       max-height: 50rem; //Maximum height before width is restricted by .container
     }
     &__image {
-      animation: ken-burns 40s linear infinite alternate;
+      animation: ken-burns 20s linear infinite alternate;
     }
   }
   @keyframes ken-burns {
@@ -45,7 +42,7 @@
       transform: translate3d(0, 0, 0);
     }
     to {
-      transform: translate3d(0, 600px, 0);
+      transform: translate3d(0, 25%, 0);
     }
   }
   .lick-logo {

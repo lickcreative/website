@@ -9,7 +9,7 @@
 }
 
 .navbar {
-  padding: 1rem;
+  padding: 0.75rem 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -19,7 +19,7 @@
     display: flex;
   }
   &__logo {
-    width: 6rem;
+    width: 4.5rem;
     height: 100%;
     fill: $pink;
   }
@@ -53,28 +53,31 @@
 }
 
 // Styles for headroom.js to hide/reveal the navbar on scroll
-.headroom {
-  will-change: transform;
-  transition: transform 0.3s ease-in-out;
-  &--pinned {
-    transform: translateY(0%);
-    // border-bottom: 2px solid $text-color;
-  }
-  &--unpinned {
-    transform: translateY(-100%);
-  }
-}
+// .headroom {
+//   will-change: transform;
+//   transition: transform 0.3s ease-in-out;
+//   &--pinned {
+//     transform: translateY(0%);
+//     // border-bottom: 2px solid $text-color;
+//   }
+//   &--unpinned {
+//     transform: translateY(-100%);
+//   }
+// }
 
 @media (min-width: 40em) {
   .navbar {
     padding: 1rem;
-    max-width: 68rem;
+    max-width: 82rem;
     margin-left: auto;
     margin-right: auto;
     &__brand {
       justify-content: flex-start;
       align-items: center;
       flex-grow: 1;
+    }
+    &__logo {
+      width: 6rem;
     }
     &__title {
       display: block;
