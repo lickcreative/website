@@ -1,0 +1,30 @@
+.case-study {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: -2rem;
+  margin-bottom: -2rem;
+  &__copy, &__img {
+    position: relative;
+    width: 100%;
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+    // min-width: 28rem;
+    flex: 1 0 auto;
+  }
+  &__copy {
+    line-height: 1.8;
+    & > * {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+@media (min-width: 40em) {
+  .case-study {
+    flex-direction: row;
+    &__copy, &__img {
+      width: 50%;
+    }
+  }
+}

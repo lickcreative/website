@@ -19,28 +19,25 @@ layout: default
   <div class="cover">
     <div class="cover__box">
       <h1 class="cover__box__heading">Client Overview</h1>
-      <p class="cover__box__content">{{ case_study.client_overview }}</p>
+      <p class="cover__box__content">{{ page.case_study.client_overview }}</p>
     </div>
+    <img class="cover__img u-object-fit" src="{{ page.cover }}" alt="" />
   </div>
 </section>
 <section class="section">
   <div class="case-study">
     <div class="case-study__copy">
       <h2>Overview</h2>
-      <p>{{ case_study.overview }}</p>
+      <p>{{ page.case_study.overview }}</p>
       <h2>Media</h2>
-      <p>{{ case_study.media }}</p>
+      <p>{{ page.case_study.media }}</p>
       <h2>Results</h2>
-      <p>{{ case_study.results }}</p>
+      <p>{{ page.case_study.results }}</p>
     </div>
-    <div class="case-study__img">
-      <img src="{{ images.1 }}" alt="" />
-  </div>
-    <div class="case-study__img">
-      <img src="{{ images.2 }}" alt="" />
-  </div>
-    <div class="case-study__img">
-      <img src="{{ images.3 }}" alt="" />
-  </div>
+    {% for file in page.assets %}
+      <div class="case-study__img">
+        <img src="{{ file.image }}" alt="{{ file.alt }}" />
+      </div>
+    {% endfor %}
   </div>
 </section>
