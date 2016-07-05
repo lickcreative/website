@@ -14,6 +14,15 @@
   <!-- Canonical URL -->
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
+  <link rel="apple-touch-icon" sizes="180x180" href=""{{ /img/icons/apple-touch-icon.png" | prepend: site.baseurl }}">
+  <link rel="icon" type="image/png" href="{{ "/img/icons/favicon-32x32.png" sizes="32x32" | prepend: site.baseurl }}">
+  <link rel="icon" type="image/png" href="{{ "/img/icons/favicon-16x16.png" sizes="16x16" | prepend: site.baseurl }}">
+  <link rel="manifest" href="{{ "/img/icons/manifest.json" | prepend: site.baseurl }}">
+  <link rel="mask-icon" href="{{ "/img/icons/safari-pinned-tab.svg" | prepend: site.baseurl }}" color="#e70072">
+  <!-- <link rel="shortcut icon" href="{{ "/img/icons/favicon.ico" | prepend: site.baseurl }}"> -->
+  <meta name="msapplication-config" content="{{ "/img/icons/browserconfig.xml" | prepend: site.baseurl }}">
+  <meta name="theme-color" content="#e70072">
+
   <!-- CSS -->
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 
