@@ -19,8 +19,8 @@
     display: flex;
   }
   &__logo {
-    width: 4.5rem;
-    height: 100%;
+    width: auto;
+    height: 2rem;
     fill: $pink;
   }
   &__title {
@@ -40,7 +40,7 @@
     list-style-type: none;
     &__item {
       display: inline;
-      margin-left: 0.5rem;
+      margin-left: 0.75rem;
       text-transform: uppercase;
       letter-spacing: 1px;
       transition: color 0.15s ease-in;
@@ -79,7 +79,7 @@
       flex-grow: 1;
     }
     &__logo {
-      width: 6rem;
+      height: 3rem;
     }
     &__title {
       display: block;
