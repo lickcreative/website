@@ -28,17 +28,19 @@
   }
   &__nav {
     margin: 0;
+    margin-left: 1rem; //Ensure space between logo and links
     padding: 0;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end; //Keep links to the right
+    flex: 1; //Make link container grow to fill space
     color: $text-color;
-    font-size: 1rem;
+    font-size: 0.85rem;
     font-family: 'Raleway', Helvetica, sans-serif;
     font-weight: 900;
     list-style-type: none;
     &__item {
       display: inline;
-      margin-left: 1rem;
+      margin-left: 0.5rem;
       text-transform: uppercase;
       letter-spacing: 1px;
       transition: color 0.15s ease-in;
