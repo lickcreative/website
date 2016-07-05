@@ -145,10 +145,10 @@ a {
  * Wrapper
  */
 .container {
-    margin-top: 4.5rem;
+    margin-top: 3.5rem;
 
     @media (min-width: 40rem) {
-      margin-top: 6rem;
+      margin-top: 5rem;
       max-width: $content-width;
       margin-left: auto;
       margin-right: auto;
@@ -162,8 +162,8 @@ a {
   &:before {
    content: "";
    display: block;
-   height: 6rem;
-   margin: -6rem 0 0;
+   height: 5rem;
+   margin: -5rem 0 0;
  }
  //Ensure no extra space at the bottom of the page
   &:not(:last-child) {
