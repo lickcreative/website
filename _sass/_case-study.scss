@@ -1,7 +1,13 @@
 .case-study {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-left: -2rem;
   margin-bottom: -2rem;
   &__copy, &__img {
@@ -9,8 +15,10 @@
     width: 100%;
     padding-left: 2rem;
     margin-bottom: 2rem;
-    // min-width: 28rem;
-    flex: 1 0 auto;
+    /* min-width: 28rem;*/
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
   }
   &__copy {
     line-height: 1.8;
@@ -22,7 +30,10 @@
 
 @media (min-width: 40em) {
   .case-study {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     &__copy, &__img {
       width: 50%;
     }

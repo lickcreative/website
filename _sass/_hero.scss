@@ -11,9 +11,11 @@
     width: 100%;
     min-height: 100%;
     height: auto;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     will-change: transform;
-    animation: ken-burns--portrait 25s linear infinite alternate;
+    -webkit-animation: ken-burns--portrait 25s linear infinite alternate;
+            animation: ken-burns--portrait 25s linear infinite alternate;
   }
 }
 
@@ -21,7 +23,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-45%, -55%);
+  -webkit-transform: translate(-45%, -55%);
+          transform: translate(-45%, -55%);
   display: block;
   width: 90%;
   height: auto;
@@ -31,18 +34,31 @@
 @media (min-width: 40em) {
   .ken-burns {
     &__container {
-      max-height: 50rem; //Maximum height before width is restricted by .container
+      max-height: 50rem; /*Maximum height before width is restricted by .container*/
     }
     &__image {
-      animation: ken-burns 20s linear infinite alternate;
+      -webkit-animation: ken-burns 20s linear infinite alternate;
+              animation: ken-burns 20s linear infinite alternate;
+    }
+  }
+  @-webkit-keyframes ken-burns {
+    from {
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    to {
+      -webkit-transform: translate3d(0, 25%, 0);
+              transform: translate3d(0, 25%, 0);
     }
   }
   @keyframes ken-burns {
     from {
-      transform: translate3d(0, 0, 0);
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
     }
     to {
-      transform: translate3d(0, 25%, 0);
+      -webkit-transform: translate3d(0, 25%, 0);
+              transform: translate3d(0, 25%, 0);
     }
   }
   .lick-logo {
@@ -50,11 +66,24 @@
   }
 }
 
-@keyframes ken-burns--portrait {
+@-webkit-keyframes ken-burns--portrait {
   from {
-    transform: scale(1) translate3d(0, 0, 0);
+    -webkit-transform: scale(1) translate3d(0, 0, 0);
+            transform: scale(1) translate3d(0, 0, 0);
   }
   to {
-    transform: scale(1.3) translate3d(0, 80px, 0);
+    -webkit-transform: scale(1.3) translate3d(0, 80px, 0);
+            transform: scale(1.3) translate3d(0, 80px, 0);
+  }
+}
+
+@keyframes ken-burns--portrait {
+  from {
+    -webkit-transform: scale(1) translate3d(0, 0, 0);
+            transform: scale(1) translate3d(0, 0, 0);
+  }
+  to {
+    -webkit-transform: scale(1.3) translate3d(0, 80px, 0);
+            transform: scale(1.3) translate3d(0, 80px, 0);
   }
 }
