@@ -158,13 +158,6 @@ a {
 .section {
   position: relative; //Ensure absolutely positioned children are relative to their section rather than the page
 
-  //Invisible padding for sections so navbar doesn't cover the start when auto-scrolled to the anchor
-  &:before {
-   content: "";
-   display: block;
-   height: 5rem;
-   margin: -5rem 0 0;
- }
  //Ensure no extra space at the bottom of the page
   &:not(:last-child) {
     margin-bottom: 2rem;
