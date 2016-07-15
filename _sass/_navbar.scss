@@ -3,19 +3,30 @@
   top: 0;
   left: 0;
   right: 0;
-  // padding: 1rem 1rem 0 1rem;
+  /* padding: 1rem 1rem 0 1rem;*/
   z-index: 100;
   background: hsl(0, 0, 100);
 }
 
 .navbar {
   padding: 0.75rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   color: $text-color;
   &__brand {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   &__logo {
@@ -28,11 +39,17 @@
   }
   &__nav {
     margin: 0;
-    margin-left: 1rem; //Ensure space between logo and links
+    margin-left: 1rem; /*Ensure space between logo and links*/
     padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end; //Keep links to the right
-    flex: 1; //Make link container grow to fill space
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; /*Keep links to the right*/
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1; /*Make link container grow to fill space*/
     color: $text-color;
     font-size: 0.85rem;
     font-family: 'Raleway', Helvetica, sans-serif;
@@ -43,6 +60,7 @@
       margin-left: 0.75rem;
       text-transform: uppercase;
       letter-spacing: 1px;
+      -webkit-transition: color 0.15s ease-in;
       transition: color 0.15s ease-in;
       &:hover {
         color: $pink;
@@ -54,18 +72,18 @@
   }
 }
 
-// Styles for headroom.js to hide/reveal the navbar on scroll
-// .headroom {
-//   will-change: transform;
-//   transition: transform 0.3s ease-in-out;
-//   &--pinned {
-//     transform: translateY(0%);
-//     // border-bottom: 2px solid $text-color;
-//   }
-//   &--unpinned {
-//     transform: translateY(-100%);
-//   }
-// }
+/* Styles for headroom.js to hide/reveal the navbar on scroll*/
+/* .headroom {*/
+/*   will-change: transform;*/
+/*   transition: transform 0.3s ease-in-out;*/
+/*   &--pinned {*/
+/*     transform: translateY(0%);*/
+/*     // border-bottom: 2px solid $text-color;*/
+/*   }*/
+/*   &--unpinned {*/
+/*     transform: translateY(-100%);*/
+/*   }*/
+/* }*/
 
 @media (min-width: 40em) {
   .navbar {
@@ -74,9 +92,16 @@
     margin-left: auto;
     margin-right: auto;
     &__brand {
-      justify-content: flex-start;
-      align-items: center;
-      flex-grow: 1;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+                  -ms-grid-row-align: center;
+              align-items: center;
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
     }
     &__logo {
       height: 3rem;
@@ -91,7 +116,9 @@
     }
     &__nav {
       font-size: 1rem;
-      justify-content: flex-end; // Push navigation to right
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; /* Push navigation to right*/
     }
   }
 }

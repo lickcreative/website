@@ -1,0 +1,22 @@
+{
+  "name": "lick-website",
+  "version": "1.0.0",
+  "description": "Lick's new website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lickcreative/website.git"
+  },
+  "author": "Oliver Phillips",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lickcreative/website/issues"
+  },
+  "homepage": "https://github.com/lickcreative/website#readme",
+  "dependencies": {
+    "zenscroll": "^3.1.0"
+  }
+}
