@@ -27,11 +27,11 @@ layout: default
 <section class="section">
   <div class="case-study">
     <div class="case-study__copy">
-      {{ page.content }}
-    </div>
+      {{ content }}
     {% for file in page.assets %}
       <div class="case-study__img">
         <img src="{{ file.image }}" alt="{{ file.alt }}" />
       </div>
     {% endfor %}
+  </div>
 </section>
