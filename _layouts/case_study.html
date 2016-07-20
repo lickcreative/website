@@ -27,13 +27,7 @@ layout: default
 <section class="section">
   <div class="case-study">
     <div class="case-study__copy">
-      <h2>Overview</h2>
-      <p>{{ page.case_study.overview }}</p>
-      <h2>Media</h2>
-      <p>{{ page.case_study.media }}</p>
-      <h2>Results</h2>
-      <p>{{ page.case_study.results }}</p>
-    </div>
+      {{ content }}
     {% for file in page.assets %}
       <div class="case-study__img">
         <img src="{{ file.image }}" alt="{{ file.alt }}" />
