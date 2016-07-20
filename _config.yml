@@ -13,6 +13,7 @@ collections:
     title: Uploads
     output: true
 defaults:
+  -
   scope:
     path: ""
     type: "case_studies"
