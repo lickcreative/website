@@ -18,15 +18,15 @@ defaults:
     type: case_studies
   values:
     layout: case_studies
-    client_overview:
-    cover_image:
+    client_overview: 
+    cover_image: 
     assets:
-      image:
-      alt:
+      image: 
+      alt: 
 email: oliver.phillips@lickcreative.com
 description: |
   Lick is a creative agency based in London.
-baseurl:
+baseurl: 
 url: https://lickcreative.github.io/
 twitter_username: wearelick
 markdown: kramdown
