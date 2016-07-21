@@ -10,7 +10,6 @@ client_overview: For over three years, Lick has worked with one of the most dyna
 cover_image: "/uploads/spurs__header.jpg"
 assets:
   image: "/uploads/spurs__header.jpg"
-  Key: "/uploads/spurs__header.jpg"
 layout: case_study
 ---
 
