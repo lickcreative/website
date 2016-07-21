@@ -22,3 +22,7 @@ For over three years, Lick has worked with one of the most dynamic football club
 
 ## Results
 With the club firmly a European force, the future for Lick and Tottenham is looking bright. Below is an overview of our latest work — to promote the last of the summer clothing range at the back end of a 'British summer'.
+
+Became the most successful summer sale in Spurs history.
+- Was translated to online and across all collateral.
+- Established Spurs as a fashion brand not just a football team.
