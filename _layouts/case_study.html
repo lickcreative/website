@@ -16,9 +16,8 @@ layout: default
     <div class="case-study__copy">
       {{ content }}
     </div>
-    {% for file in page.assets %}
-      <div class="case-study__img" style="background-image: url('{{ image }}');">
-        <img src="{{ file.image }}" alt="{{ file.alt }}" />
+    {% for asset in page.assets %}
+      <div class="case-study__img" style="background-image: url('{{ asset }}');">
       </div>
     {% endfor %}
 

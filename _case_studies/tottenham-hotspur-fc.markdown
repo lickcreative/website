@@ -9,7 +9,8 @@ client_overview: For over three years, Lick has worked with one of the most dyna
   the last of the summer clothing range at the back end of a ‘British’ summer.
 cover_image: "/uploads/spurs__header.jpg"
 assets:
-  image: "/uploads/spurs__header.jpg"
+- "/uploads/spurs__header.jpg"
+- "/uploads/spurs__header.jpg"
 layout: case_study
 ---
 
