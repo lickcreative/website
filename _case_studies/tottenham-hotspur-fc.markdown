@@ -11,6 +11,7 @@ cover_image: "/uploads/spurs__header.jpg"
 images:
 - "/uploads/spurs__header.jpg"
 - "/uploads/spurs__header.jpg"
+- "/uploads/spurs__header.jpg"
 layout: case_study
 ---
 
