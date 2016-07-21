@@ -8,6 +8,8 @@ client_overview: For over three years, Lick has worked with one of the most dyna
   and Tottenham is looking bright. Below is an over view of our latest work - to promote
   the last of the summer clothing range at the back end of a ‘British’ summer.
 cover_image: "/uploads/spurs__header.jpg"
+assets:
+  image: "/uploads/spurs__header.jpg"
 layout: case_study
 ---
 
