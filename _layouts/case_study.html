@@ -17,8 +17,8 @@ layout: default
       {{ content }}
     </div>
     {% for file in page.assets %}
-      <div class="case-study__img" >
-        <img src="{{ file.image }}" alt="{{ file.alt }}" />
+      <div class="case-study__img" style="background-image: url('{{ file.image }}');">
+        <!-- <img src="{{ file.image }}" alt="{{ file.alt }}" /> -->
       </div>
     {% endfor %}
 
