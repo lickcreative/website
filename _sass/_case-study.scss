@@ -13,12 +13,15 @@
   &__copy, &__img {
     position: relative;
     width: 100%;
+    min-height: 35rem;
+    min-height: 75vh;
     padding-left: 2rem;
     margin-bottom: 2rem;
-    /* min-width: 28rem;*/
     -webkit-box-flex: 1;
         -ms-flex: 1 0 auto;
             flex: 1 0 auto;
+    background-size: cover;
+    background-position: center center;
   }
   &__copy {
     line-height: 1.8;
