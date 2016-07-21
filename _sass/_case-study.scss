@@ -10,18 +10,19 @@
           flex-direction: column;
   margin-left: -2rem;
   margin-bottom: -2rem;
+  &__copy {
+    background-size: cover;
+    background-position: center center;
+  }
   &__copy, &__img {
     position: relative;
     width: 100%;
     min-height: 35rem;
     min-height: 75vh;
-    padding-left: 2rem;
     margin-bottom: 2rem;
     -webkit-box-flex: 1;
         -ms-flex: 1 0 auto;
             flex: 1 0 auto;
-    background-size: cover;
-    background-position: center center;
   }
   &__copy {
     line-height: 1.8;
@@ -38,7 +39,9 @@
         -ms-flex-direction: row;
             flex-direction: row;
     &__copy, &__img {
-      width: 50%;
+      width: 48%;
+      width: calc(50% - 2rem);
+      margin-left: 2rem;
     }
   }
 }
