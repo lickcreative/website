@@ -20,8 +20,8 @@ defaults:
     layout: case_study
     client_overview: 
     cover_image: 
-    assets:
-      image: 
+    images:
+    - image: 
 email: oliver.phillips@lickcreative.com
 description: |
   Lick is a creative agency based in London.
