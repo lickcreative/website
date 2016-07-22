@@ -2,9 +2,9 @@
 title: Disney
 date: 2016-07-21 13:28:00 Z
 layout: case_study_video
-cover_video: "https://www.youtube.com/embed/9gSDjL2DVDM"
+cover_video: https://www.youtube.com/embed/9gSDjL2DVDM
 images:
-- ""
+- ''
 ---
 
 ## Overview
