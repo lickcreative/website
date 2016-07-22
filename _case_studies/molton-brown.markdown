@@ -1,11 +1,14 @@
 ---
 title: Molton Brown
 date: 2016-07-21 13:28:00 Z
-client_overview: Molton Brown are a new client of ours. They've been doing some wonderful things in the luxury retail space, so we were very happy to come up with some concepts for their Mother's Day campaign in-store.
+client_overview: Molton Brown are a new client of ours. They've been doing some wonderful
+  things in the luxury retail space, so we were very happy to come up with some concepts
+  for their Mother's Day campaign in-store.
 cover_image: "/uploads/molton-brown-1280.jpg"
 images:
 - "/uploads/molton-brown-box.jpg"
 ---
+
 ## Results
 - Identified new channels to promote the event and tell a story.
 - Delivered a bespoke experience for flagship stores.
