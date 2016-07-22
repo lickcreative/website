@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<section class="section">
+  <div class="cover" style="background-image: url('{{ page.cover_image }}');"></div>
+</section>
+<section class="section">
+  <div class="case-study">
+    <div class="case-study__copy">
+      {{ content }}
+    </div>
+    {% for image in page.images %}
+      <div class="case-study__img" style="background-image: url('{{ image }}');">
+      </div>
+    {% endfor %}
+
+</section>
