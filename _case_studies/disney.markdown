@@ -1,10 +1,10 @@
 ---
 title: Disney
 date: 2016-07-21 13:28:00 Z
-layout: case_study_video
-cover_video: https://www.youtube.com/embed/9gSDjL2DVDM
 images:
-- ''
+- "/uploads/become-iron-man.jpg"
+cover_video: https://www.youtube.com/embed/9gSDjL2DVDM
+layout: case_study_video
 ---
 
 ## Overview
@@ -12,3 +12,5 @@ Disney asked us to run a nationwide tour to promote the launch of Iron Man 3. Th
 
 ## Results
 This campaign was more successful than we could have imagined. The microsite was overwhelmed with people wanting to sign-up and we had hour long queues of people waiting to play at every location.
+
+Disney Stores in the locations experienced sales uplift of up to 150% and the film itself broke UK box office records to become the highest-earning film of 2013.
