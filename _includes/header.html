@@ -1,6 +1,6 @@
 <header class="header-nav">
   <nav class="navbar">
-    <a class="navbar__brand" href="#home">
+    <a class="navbar__brand" href="{{ "#home" | prepend: site.url }}">
       <svg class="navbar__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 327 219">
       <g>
       <path class="path-dot draw-dot" d="M85.47,94c3.98-1.07,6.79-3.34,8.44-6.83c1.65-3.47,1.92-7.29,0.8-11.44c-0.89-3.3-2.66-5.69-5.32-7.15
@@ -39,14 +39,14 @@
       <div class="navbar__title"><h1>The connected shopper agency</h1></div>
     </a>
     <ul class="navbar__nav">
-      <!-- {% for my_page in site.pages %}
-        {% if my_page.title %}
-        <li class="navbar__nav__item"><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
-        {% endif %}
-      {% endfor %} -->
-      <li class="navbar__nav__item"><a href="#about">About</a></li>
-      <li class="navbar__nav__item"><a href="#work">Work</a></li>
-      <li class="navbar__nav__item"><a href="/contact">Contact</a></li>
+      <li class="navbar__nav__item">
+        <!-- If/else ensures correct in-page anchor link on homepage, and full URL elsewhere -->
+        <a {% if page.url == "/" %} href="#about" {% else %} href="{{ "#about" | prepend: site.url }}" {% endif %}>About</a>
+      </li>
+      <li class="navbar__nav__item">
+        <a {% if page.url == "/" %} href="#work" {% else %} href="{{ "#work" | prepend: site.url }}" {% endif %}>Work</a>
+      </li>
+      <li class="navbar__nav__item"><a href="{{ "/contact" | prepend: site.url }}">Contact</a></li>
     </ul>
   </nav>
 </header>

@@ -22,7 +22,7 @@
     line-height: 1.1;
     text-transform: uppercase;
     letter-spacing: 1px;
-    cursor: pointer;
+    // cursor: pointer;
     outline: none;
     -webkit-tap-highlight-color: transparent;
     -webkit-transition: color 0.2s ease-in-out;
@@ -31,7 +31,7 @@
       font-weight: 900;
     }
     &:hover {
-      color: $pink;
+      // color: $pink;
     }
     &__close {
       position: absolute;
@@ -67,7 +67,7 @@
 @for $i from 1 through 8 {
   #input-#{$i}:checked ~ .tabs {
       & #label-#{$i} {
-        color: $pink;
+        // color: $pink;
     }
     & #label-close {
       opacity: 0.5;
