@@ -5,30 +5,35 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-left: -0.5rem; /*Offsets the padding on grid__items*/
-  margin-bottom: -0.5rem; /*Offets the padding on grid__items*/
+  // margin-left: -0.5rem; /*Offsets the padding on grid__items*/
+  // margin-bottom: -0.5rem; /*Offets the padding on grid__items*/
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
   &__item {
     -webkit-box-flex: 1;
-        -ms-flex: 1 0 auto;
-            flex: 1 0 auto; /*Allows the __items to fill empty space*/
-    padding-left: 0.5rem; /*Creates a left gutter*/
-    padding-bottom: 0.5rem; /*Creates a right gutter*/
-    min-width: 13rem; /*When __items hit this width they become full-width !!!SAFARI BUG!!!*/
-    &--4 {
-      width: 33%;
+        -ms-flex: 1 0 25%;
+            flex: 1 0 25%; /*Allows the __items to fill empty space*/
+    min-width: 20rem;
+    min-height: 20rem;
+    &:nth-last-child(2):nth-child(4n) {
+      min-width: 33%;
     }
-    &--6 {
-      width: 50%;
-    }
-    &--8 {
-      width: 66%;
-    }
-    &--12 {
-      width: 100%;
-    }
+    // padding-left: 0.5rem; /*Creates a left gutter*/
+    // padding-bottom: 0.5rem; /*Creates a right gutter*/
+    // min-width: 13rem; /*When __items hit this width they become full-width !!!SAFARI BUG!!!*/
+    // &--4 {
+    //   width: 33%;
+    // }
+    // &--6 {
+    //   width: 50%;
+    // }
+    // &--8 {
+    //   width: 66%;
+    // }
+    // &--12 {
+    //   width: 100%;
+    // }
   }
 }
