@@ -12,37 +12,6 @@
      object-fit: cover;
 }
 
-.u-overlay {
-  position: relative;
-  & > .panel__caption,
-  & > .play-icon {
-    z-index: 10;
-  }
-  &::after {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: black;
-    opacity: 0.25;
-    -webkit-transition: opacity 0.4s ease-out;
-    transition: opacity 0.4s ease-out;
-    will-change: opacity;
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-    z-index: 5;
-  }
-  @media (min-width: 40rem) {
-    &:hover {
-      &::after {
-        opacity: 0.1;
-      }
-    }
-  }
-}
-
 .u-t-center {
   text-align: center;
 }

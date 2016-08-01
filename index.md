@@ -8,7 +8,7 @@ layout: default
 </section>
 
 <section class="section" id="about">
-  {% include tabs.html %}
+  {% include about.html %}
 </section>
 
 <section class="section" id="work">
