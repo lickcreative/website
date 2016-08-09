@@ -8,7 +8,7 @@ collections:
     permalink: "/case_studies/:path/"
   clients:
     title: Clients
-    output: true
+    output: false
   posts:
     title: Posts
     output: true
