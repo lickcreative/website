@@ -38,15 +38,30 @@
   </svg>
       <div class="navbar__title"><h1>The connected shopper agency</h1></div>
     </a>
-    <ul class="navbar__nav">
-      <li class="navbar__nav__item">
+    <div class="navbar__container">
+    <ul class="navbar__list">
+      <li class="navbar__item">
         <!-- If/else ensures correct in-page anchor link on homepage, and full URL elsewhere -->
         <a {% if page.url == "/" %} href="#about" {% else %} href="{{ "#about" | prepend: site.url }}" {% endif %}>About</a>
       </li>
-      <li class="navbar__nav__item">
+      <li class="navbar__item">
         <a {% if page.url == "/" %} href="#work" {% else %} href="{{ "#work" | prepend: site.url }}" {% endif %}>Work</a>
       </li>
-      <li class="navbar__nav__item"><a href="{{ "/contact" | prepend: site.url }}">Contact</a></li>
+      <li class="navbar__item">
+        <a {% if page.url == "/" %} href="#people" {% else %} href="{{ "#people" | prepend: site.url }}" {% endif %}>People</a>
+      </li>
+      <li class="navbar__item"><a href="{{ "/contact" | prepend: site.url }}">Contact</a></li>
+      <li class="navbar__item">
+        <a href="{{ "retail-lab" | prepend: site.url }}">Retail Lab</a>
+      </li>
+      <li class="navbar__item">
+        <a href="http://thedeltagroup.co.uk">The Delta Group</a>
+        <svg class='navbar__link-icon' height="48" viewBox="0 0 24 24" width="48" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 19H5V5h7V3H5C4 3 3 4 3 5v14c0 1 1 2 2 2h14c1 0 2-1 2-2v-7h-2v7zM14 3v2h3.6l-9.8 9.8 1.4 1.4L19 6.4V10h2V3h-7z"/></svg>
+      </li>
     </ul>
+    </div>
+    <div id="hamburgler" class="navbar__icon-wrapper">
+      <span class="navbar__icon"></span>
+    </div>
   </nav>
 </header>

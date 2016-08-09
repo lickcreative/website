@@ -3,7 +3,6 @@
   top: 0;
   left: 0;
   right: 0;
-  /* padding: 1rem 1rem 0 1rem;*/
   z-index: 100;
   background: hsl(0, 0, 100);
   z-index: 500;
@@ -11,19 +10,8 @@
 
 .navbar {
   padding: 0.75rem 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  align-items: center;
   color: $text-color;
   &__brand {
     display: -webkit-box;
@@ -38,53 +26,102 @@
   &__title {
     display: none;
   }
-  &__nav {
+  &__container{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    transition: all 0.4s ease;
+  }
+  &__list {
+    display: block;
+    position: absolute;
     margin: 0;
-    margin-left: 1rem; /*Ensure space between logo and links*/
     padding: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end; /*Keep links to the right*/
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1; /*Make link container grow to fill space*/
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.2);
+    list-style-type: none;
     color: $text-color;
-    font-size: 0.85rem;
+    font-size: 8vw;
     font-family: 'Raleway', Helvetica, sans-serif;
     font-weight: 900;
-    list-style-type: none;
-    &__item {
-      display: inline;
-      margin-left: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      -webkit-transition: color 0.15s ease-in;
-      transition: color 0.15s ease-in;
-      &:hover {
-        color: $pink;
-      }
-      &:nth-child(2n) {
-        font-weight: 400;
-      }
-    }
+    transition: all 0.4s ease;
+    will-change: transform, opacity;
+  }
+  &__item {
+    margin: 0;
+    margin-bottom: 0.25rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  &__link-icon {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+  &__icon-wrapper {
+    position: relative;
+    margin-left: auto;
+    height: 1.5rem;
+    width: 1.5rem;
+    cursor: pointer
+  }
+  &__icon,
+  &__icon:before,
+  &__icon:after {
+    content: '';
+    position: absolute;
+    border-radius: 1em;
+    height: 2px;
+    width: 1.5rem;
+    background: $text-color;
+    transition: all 0.2s ease
+  }
+
+  &__icon {
+    top: 0.75em
+  }
+
+  &__icon:before {
+    top: -0.55em
+  }
+
+  &__icon:after {
+    top: 0.55em
   }
 }
 
-/* Styles for headroom.js to hide/reveal the navbar on scroll*/
-/* .headroom {*/
-/*   will-change: transform;*/
-/*   transition: transform 0.3s ease-in-out;*/
-/*   &--pinned {*/
-/*     transform: translateY(0%);*/
-/*     // border-bottom: 2px solid $text-color;*/
-/*   }*/
-/*   &--unpinned {*/
-/*     transform: translateY(-100%);*/
-/*   }*/
-/* }*/
+.hamburgler-active {
+  & .navbar__container {
+    opacity: 1;
+    pointer-events: initial;
+  }
+  & .navbar__list {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  & .navbar__icon {
+    background: transparent;
+    transform: rotate(-135deg)
+  }
+  & .navbar__icon:before,
+  & .navbar__icon:after {
+    top: 0;
+  }
+  & .navbar__icon:before {
+    transform: rotate(90deg);
+  }
+  // & .navbar__icon,
+  // & .navbar__icon:before,
+  // & .navbar__icon:after {
+    // background: #555;
+  // }
+}
 
 @media (min-width: 40em) {
   .navbar {
@@ -93,20 +130,55 @@
     margin-left: auto;
     margin-right: auto;
     &__brand {
-      -webkit-box-pack: start;
-          -ms-flex-pack: start;
-              justify-content: flex-start;
       -webkit-box-align: center;
-          -ms-flex-align: center;
-                  -ms-grid-row-align: center;
-              align-items: center;
+      -ms-flex-align: center;
+      -ms-grid-row-align: center;
+      align-items: center;
       -webkit-box-flex: 1;
-          -ms-flex-positive: 1;
-              flex-grow: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
     }
     &__logo {
       height: 3rem;
     }
+    &__container {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      opacity: 1;
+      pointer-events: initial;
+    }
+    &__list {
+      position: initial;
+      display: flex;
+      transform: none;
+    }
+    &__item {
+      display: inline;
+      margin: 0;
+      margin-left: 1rem;
+      font-size: 1rem;
+      transition: color 0.15s ease-in;
+      & a:hover, & a:focus {
+        color: $pink;
+      }
+    }
+    &__link-icon {
+      display: none;
+    }
+    &__icon-wrapper {
+      display: none;
+    }
+  }
+  .hamburgler-active {
+    & .navbar__list {
+      transform: translate(0, 0) scale(1);
+    }
+  }
+}
+
+@media (min-width: 70em) {
+  .navbar {
     &__title {
       display: block;
       margin-left: 1rem;
@@ -114,12 +186,6 @@
         font-size: 1rem;
         letter-spacing: 2px;
       }
-    }
-    &__nav {
-      font-size: 1rem;
-      -webkit-box-pack: end;
-          -ms-flex-pack: end;
-              justify-content: flex-end; /* Push navigation to right*/
     }
   }
 }
