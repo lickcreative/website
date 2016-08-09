@@ -6,6 +6,9 @@ collections:
     title: Case Studies
     output: true
     permalink: "/case_studies/:path/"
+  clients:
+    title: Clients
+    output: true
   posts:
     title: Posts
     output: true
