@@ -157,7 +157,7 @@ a {
 
  /*Ensure no extra space at the bottom of the page*/
   &:not(:last-child) {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -170,8 +170,8 @@ a {
 @media (min-width: 40em) {
   .section {
     &:not(:last-child) {
-      margin-bottom: 6rem;
-      margin-bottom: 6vw;
+      margin-bottom: 4rem;
+      margin-bottom: 4vw;
     }
   }
   .about-text {
