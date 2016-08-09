@@ -11,6 +11,10 @@ layout: default
   {% include about.html %}
 </section>
 
+<section class="section" id="about">
+  {% include clients.html %}
+</section>
+
 <section class="section" id="work">
   {% include grid.html %}
 </section>
