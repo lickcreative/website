@@ -9,3 +9,13 @@
       -ms-flex-align: center;
           align-items: center;
 }
+
+@mixin vertical-space {
+  margin-bottom: $vs-rem;
+  margin-bottom: $vs-vw;
+
+  @media (min-width: 50em) {
+    margin-bottom: $vs-rem--lg;
+    margin-bottom: $vs-vw--lg;
+  }
+}

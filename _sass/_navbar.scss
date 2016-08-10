@@ -58,12 +58,17 @@
   &__item {
     margin: 0;
     margin-bottom: 0.25rem;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
     text-transform: uppercase;
     letter-spacing: 1px;
   }
   &__link-icon {
-    width: 1.3rem;
-    height: 1.3rem;
+    display: inline-block;
+    margin-left: 0.25rem;
+    width: 1.5rem;
+    height: auto;
   }
   &__icon-wrapper {
     position: relative;
@@ -154,17 +159,26 @@
       transform: none;
     }
     &__item {
-      display: inline;
       margin: 0;
       margin-left: 1rem;
       font-size: 1rem;
       transition: color 0.15s ease-in;
       & a:hover, & a:focus {
         color: $pink;
+        & .navbar__link-icon {
+          fill: $pink;
+        }
+      }
+      & a:focus {
+        padding-top: 2px;
+        border-bottom: 2px solid;
+        outline: none;
       }
     }
     &__link-icon {
-      display: none;
+      vertical-align: middle;;
+      padding-bottom: 3px;
+      width: 1rem;
     }
     &__icon-wrapper {
       display: none;
