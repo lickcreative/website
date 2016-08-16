@@ -9,6 +9,9 @@ collections:
   clients:
     title: Clients
     output: false
+  home-sections:
+    title: Home Sections
+    output: true
   posts:
     title: Posts
     output: true
