@@ -11,7 +11,7 @@ collections:
     output: false
   home-sections:
     title: Home Sections
-    output: true
+    output: false
   posts:
     title: Posts
     output: true
