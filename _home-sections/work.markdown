@@ -5,3 +5,53 @@ published: false
 position: 3
 ---
 
+<div class="grid">
+  <div class="grid__item grid__item--work">
+    <a class="panel" href="{{ "/case_studies/tottenham-hotspur-fc" | prepend: site.baseurl }}">
+      <img class="u-object-fit" src="{{ "/img/grass.jpg" | prepend: site.baseurl }}" alt="" />
+      <h3 class="panel__caption">THFC</h3>
+    </a>
+  </div>
+  <div class="grid__item grid__item--work">
+    <a class="panel" href="{{ "/case_studies/tottenham-hotspur-fc" | prepend: site.baseurl }}">
+      <img class="u-object-fit" src="{{ "/img/burger.jpg" | prepend: site.baseurl }}" alt="" />
+      <h3 class="panel__caption">Burger King</h3>
+    </a>
+  </div>
+  <div class="grid__item grid__item--work">
+    <a class="panel" href="{{ "/case_studies/disney" | prepend: site.baseurl }}">
+      <img class="u-object-fit" src="{{ "/img/ironman.jpg" | prepend: site.baseurl }}" alt="" />
+      <h3 class="panel__caption">Disney</h3>
+    </a>
+  </div>
+  <div class="grid__item grid__item--work">
+    <a class="panel" href="{{ "/case_studies/tottenham-hotspur-fc" | prepend: site.baseurl }}">
+      <img class="u-object-fit" src="{{ "/img/wilko.jpg" | prepend: site.baseurl }}" alt="" />
+      <h3 class="panel__caption">Wilko</h3>
+    </a>
+  </div>
+  <div class="grid__item grid__item--work">
+    <a class="panel" href="{{ "/case_studies/tottenham-hotspur-fc" | prepend: site.baseurl }}">
+      <img class="u-object-fit" src="{{ "/img/adidas.jpg" | prepend: site.baseurl }}" alt="" />
+      <h3 class="panel__caption">Adidas</h3>
+    </a>
+  </div>
+  <div class="grid__item grid__item--work">
+    <a class="panel" href="{{ "/case_studies/tottenham-hotspur-fc" | prepend: site.baseurl }}">
+      <img class="u-object-fit" src="{{ "/img/honey.jpg" | prepend: site.baseurl }}" alt="" />
+      <h3 class="panel__caption">Yokebe</h3>
+    </a>
+  </div>
+  <div class="grid__item grid__item--work">
+    <a class="panel" href="{{ "/case_studies/molton-brown" | prepend: site.baseurl }}">
+      <img class="u-object-fit" src="{{ "/img/molton.jpg" | prepend: site.baseurl }}" alt="" />
+      <h3 class="panel__caption">Molton Brown</h3>
+    </a>
+  </div>
+  <div class="grid__item grid__item--work">
+    <a class="panel" href="{{ "/case_studies/tottenham-hotspur-fc" | prepend: site.baseurl }}">
+      <img class="u-object-fit" src="{{ "/img/spurs.jpg" | prepend: site.baseurl }}" alt="" />
+      <h3 class="panel__caption">THFC</h3>
+    </a>
+  </div>
+</div>
