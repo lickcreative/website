@@ -45,7 +45,7 @@
   }
 }
 
-@media (min-width: 40em) {
+@media (min-width: 50em) {
   .cover {
     min-height: calc(100vh - 5rem); //Full height minus nav bar
     -webkit-box-align: center;
@@ -53,7 +53,7 @@
                 -ms-grid-row-align: center;
             align-items: center;
     &__box {
-      width: 70%;
+      max-width: 60rem;
       height: auto;
       background: hsla(0, 0, 0, 0.8);
       &__heading {
