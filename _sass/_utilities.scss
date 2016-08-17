@@ -12,7 +12,7 @@
      object-fit: cover;
 }
 
-.u-t-center {
+.u-text-center {
   text-align: center;
 }
 
@@ -26,7 +26,18 @@
   @media(min-width: 50em) {
     margin-left: auto;
     margin-right: auto;
+  }
+  &--medium {
     max-width: 60rem;
+  }
+  &--large {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 100rem;
+    @media(min-width: 50em) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
   }
 }
 
