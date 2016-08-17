@@ -2,23 +2,20 @@
 layout: default
 ---
 
-<section class="section">
+<section class="section u-vertical-space">
   <div class="cover" style="background-image: url('{{ page.cover_image }}');">
     <div class="cover__box">
-      <h1 class="cover__box__heading">Client Overview</h1>
-      <p class="cover__box__content">{{ page.client_overview }}</p>
+      <h1 class="cover__box__heading u-text-center">{{ page.title }}</h1>
+      <div class="cover__box__content u-big-text">{{ content }}</div>
     </div>
-    <!-- <img class="cover__img u-object-fit" src="{{ page.cover_image }}" alt="" /> -->
   </div>
 </section>
-<section class="section">
-  <div class="case-study">
-    <div class="case-study__copy">
-      {{ content }}
-    </div>
+<section class="section u-vertical-space">
+  <div class="grid grid--gutter u-center-block--large">
     {% for image in page.images %}
-      <div class="case-study__img" style="background-image: url('{{ image }}');">
-      </div>
+    <div class="grid__item grid__item--third">
+      <img class="u-object-fit" src="{{ image }}">
+    </div>
     {% endfor %}
-
+  </div>
 </section>

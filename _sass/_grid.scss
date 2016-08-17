@@ -9,7 +9,12 @@
     justify-content: center;
     align-items: center;
   }
+  &--gutter {
+    margin-left: -1rem;
+    margin-bottom: -1rem;
+  }
   &__item {
+    position: relative;
     &--clients {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 10%;
@@ -43,6 +48,21 @@
     &--half {
       flex: 1 0 50%;
       min-width: 18em;
+    }
+    &--third {
+      margin-left: 1rem;
+      margin-bottom: 1rem;
+      flex: 1 0 32%;
+      min-width: 15rem;
+      min-height: 15rem;
+      width: 20vw;
+      height: 20vw;
+      // max-width: calc(33% - 1rem);
+      // max-height: calc(33% - 1rem);
+      // &:not(:last-child) {
+      //   margin-right: 1rem;
+      //   margin-bottom: 1rem;
+      // }
     }
   }
 }
