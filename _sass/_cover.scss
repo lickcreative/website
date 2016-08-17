@@ -1,6 +1,7 @@
 .cover {
   position: relative;
-  min-height: 90vh;
+  min-height: 600px;
+  min-height: calc(100vh - 3.5rem); //Full height minus nav bar
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,6 +47,7 @@
 
 @media (min-width: 40em) {
   .cover {
+    min-height: calc(100vh - 5rem); //Full height minus nav bar
     -webkit-box-align: center;
         -ms-flex-align: center;
                 -ms-grid-row-align: center;
@@ -53,7 +55,7 @@
     &__box {
       width: 70%;
       height: auto;
-      background: hsla(0, 0, 0, 0.7);
+      background: hsla(0, 0, 0, 0.8);
       &__heading {
       }
       &__content {
