@@ -61,7 +61,7 @@
  * The rule below moves all images past the second one down the stack.
  * This is because the second image needs to show on top of the first one when it transitions in.
  **/
-#slideshow .js-animating:first-child + img ~ img {
+.js-animating:first-child + img ~ img {
   z-index: -1;
 }
 
@@ -69,7 +69,7 @@
  * Because images are styled with a different point of origin, the following rule will create different panning effects.
  */
 
-#slideshow .js-animating {
+.js-animating {
   /* opacity: 1;*/
   /* transform: scale(1.2);*/
   -webkit-animation: fade 2s forwards, zoom 15s linear forwards;

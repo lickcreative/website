@@ -1,4 +1,4 @@
-<script type="text/javascript" src="{{ " /node_modules/zenscroll/zenscroll-min.js " | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/node_modules/zenscroll/zenscroll-min.js " | prepend: site.baseurl }}"></script>
 <script type="text/javascript">
     var defaultDuration = 800; // ms
     var edgeOffset = 100; // 100px offset to account for navbar
@@ -24,7 +24,7 @@
 
         // the third variable is to keep track of where we are in the loop
         // if it is set to 1 (instead of 0) it is because the first image is styled when the page loads
-        var images = document.getElementById('slideshow').getElementsByTagName('img'),
+        var images = document.getElementById('js-slideshow').getElementsByTagName('img'),
             numberOfImages = images.length,
             i = 1;
 
@@ -73,4 +73,28 @@
   }
 
   document.querySelector('.navbar__list').addEventListener('click', checkNav);
+</script>
+<script>
+//http://blog.grayghostvisuals.com/js/detecting-scroll-position/
+  var navbar             = document.getElementById("js-navbar"),
+      cover              = document.querySelector(".cover"),
+      navbarHeight       = getComputedStyle(navbar).height.split('px')[0],
+      coverHeight        = getComputedStyle(cover).height.split('px')[0],
+      heightDifference   = (coverHeight - navbarHeight);
+
+  navbar.classList.add("js-inverted");
+
+  function changeScroll(e) {
+
+    if( window.pageYOffset > heightDifference) {
+      navbar.classList.remove("js-inverted");
+    }
+
+    if( window.pageYOffset < heightDifference) {
+      navbar.classList.add("js-inverted");
+    }
+  }
+
+  // Scroll handler to toggle classes.
+  window.addEventListener('scroll', changeScroll, false);
 </script>

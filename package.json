@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/lickcreative/website#readme",
   "dependencies": {
+    "headroom.js": "^0.9.3",
     "zenscroll": "^3.1.0"
   }
 }
