@@ -147,13 +147,13 @@ a {
 /**
  * Wrapper
  */
-.container {
-    margin-top: 3.5rem;
-
-    @media (min-width: 50rem) {
-      margin-top: 5rem;
-    }
-}
+// .container {
+//     margin-top: 3.5rem;
+//
+//     @media (min-width: 50rem) {
+//       margin-top: 5rem;
+//     }
+// }
 
 .section {
   position: relative; /*Ensure absolutely positioned children are relative to their section rather than the page*/
