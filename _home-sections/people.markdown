@@ -3,7 +3,7 @@ title: People
 date: 2016-08-16 10:09:00 Z
 published: false
 position: 4
-image:
+image: 
 ---
 
 <div class="u-center-block u-center-block--medium">
