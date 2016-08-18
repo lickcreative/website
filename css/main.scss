@@ -34,8 +34,9 @@ $vs-vw: 4vw;
 $vs-rem--lg: 6rem;
 $vs-vw--lg: 6vw;
 
-$on-palm:          600px;
-$on-laptop:        800px;
+$small-width: 40em;
+$medium-width: 50em;
+$large-width: 80em;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
@@ -51,4 +52,4 @@ $on-laptop:        800px;
         "case-study",
         "utilities",
         "svg-animation"
-;
+        ;
