@@ -113,47 +113,33 @@ strong {
   font-weight: 900;
 }
 
+address {
+  font-style: normal;
+}
+
 a {
   color: inherit;
   text-decoration: none;
   cursor: pointer;
+  border-bottom: 1px solid;
+}
+
+a {
+  // color: $brand-color;
+
+  // &:visited {
+  //     color: darken($brand-color, 15%);
+  // }
+
+  // &:hover {
+  //     text-decoration: underline;
+  // }
 }
 
 p {
   margin: 0;
   margin-bottom: 1rem;
 }
-
-
-
-/**
- * Links
- *
-a {
-    color: $brand-color;
-    text-decoration: none;
-
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
-
-    &:hover {
-        color: $text-color;
-        text-decoration: underline;
-    }
-}
-*/
-
-/**
- * Wrapper
- */
-// .container {
-//     margin-top: 3.5rem;
-//
-//     @media (min-width: 50rem) {
-//       margin-top: 5rem;
-//     }
-// }
 
 .section {
   position: relative; /*Ensure absolutely positioned children are relative to their section rather than the page*/

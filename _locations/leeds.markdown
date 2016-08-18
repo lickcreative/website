@@ -1,6 +1,6 @@
 ---
 title: Better
-image: "http://placehold.it/500x500"
+image: "/uploads/city.jpg"
 address:
 - "Unit 5, St David’s Court"
 - "Leeds"

@@ -1,6 +1,6 @@
 ---
 title: LA Office
-image: "http://placehold.it/500x500"
+image: "/uploads/city.jpg"
 address:
 - "6515 W. Sunset Blvd, Suite 310"
 - "Hollywood"

@@ -1,6 +1,6 @@
 ---
 title: Waltham Cross Office
-image: "http://placehold.it/500x500"
+image: "/uploads/city.jpg"
 address:
 - "Unit 25, The I/O Centre"
 - "Lea Road"

@@ -48,6 +48,7 @@
   .panel {
     /* padding: 1.5rem;*/
     &:hover {
+      text-decoration: none;
       &::after {
         opacity: 0.5;
         background: $pink;

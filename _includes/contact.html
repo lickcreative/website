@@ -1,18 +1,17 @@
-<div class="u-center-block u-center-block--large grid grid--center">
+<div class="u-center-block u-center-block--medium grid grid--center">
   {% for location in site.locations %}
     <div class="grid__item grid__item--half">
-      <img class="" src="{{ location.image }}" alt="{{ location.title }}">
-      <span>
-        <address>
-          {% for line in location.address %}
-            {{ line }},<br>
-            {{ line }},<br>
-            {{ line }},<br>
-            {{ line }}
-          {% endfor %}
-        </address>
-        <a href="tel:{{ location.phone }}"></a>
-      </span>
+      <div class="u-overlay">
+        <img class="u-overlay__image" src="{{ location.image }}" alt="{{ location.title }}">
+        <div class="u-overlay__text u-big-text">
+          <address>
+            {% for line in location.address %}
+              {{ line }}<br>
+            {% endfor %}
+          </address>
+          <span>T: <a href="tel:{{ location.phone }}">{{ location.phone }}</a></span>
+        </div>
+      </div>
     </div>
   {% endfor %}
 </div>

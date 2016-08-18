@@ -1,6 +1,6 @@
 ---
 title: Walthamstow Office
-image: "http://placehold.it/500x500"
+image: "/uploads/city.jpg"
 address:
 - "153-157 Blackhorse Lane"
 - "Walthamstow"
