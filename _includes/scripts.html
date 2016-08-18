@@ -80,7 +80,7 @@
       cover              = document.querySelector(".cover"),
       navbarHeight       = getComputedStyle(navbar).height.split('px')[0],
       coverHeight        = getComputedStyle(cover).height.split('px')[0],
-      heightDifference   = (coverHeight - navbarHeight);
+      heightDifference   = (coverHeight - (navbarHeight / 2));
 
   navbar.classList.add("js-inverted");
 
