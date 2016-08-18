@@ -21,9 +21,9 @@
     position: relative;
     &--clients {
       -webkit-box-flex: 0;
-          -ms-flex: 0 0 10%;
-              flex: 0 0 10%;
-      min-width: 5rem;
+          -ms-flex: 0 0 25%;
+              flex: 0 0 25%;
+      // min-width: 5rem;
       min-height: 5rem;
       width: 10vw;
       height: 10vw;
@@ -38,16 +38,20 @@
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
+              @include mq-small {
+                -ms-flex-preferred-size: 12.5%;
+                    flex-basis: 12.5%;
+              }
+              @include mq-medium {
+                -ms-flex-preferred-size: 10%;
+                    flex-basis: 10%;
+              }
     }
     &--work {
       -webkit-box-flex: 1;
           -ms-flex: 1 0 100%;
               flex: 1 0 100%;
-      /* min-width: 20rem;*/
       min-height: 20rem;
-      /* &:nth-last-child(2):nth-child(4n) {*/
-      /*   min-width: 33%;*/
-      /* }*/
       @include mq-small {
         -ms-flex-preferred-size: 50%;
             flex-basis: 50%;
