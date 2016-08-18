@@ -51,7 +51,7 @@
     width: auto;
     height: auto;
     max-height: 90%;
-    max-width: 50rem;
+    max-width: 90%;
     z-index: 100;
   }
 }
@@ -78,9 +78,9 @@
 
 @media (min-width: 40em) {
   .hero {
-    max-height: 50rem; /*Maximum height before width is restricted by .container*/
+    // max-height: 50rem; /*Maximum height before width is restricted by .container*/
     &__logo {
-      // height: 60%;
+      max-width: 55rem;
     }
   }
 }
