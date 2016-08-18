@@ -21,5 +21,5 @@ layout: default
 </section>
 
 <section class="section u-vertical-space" id="contact">
-
+  {% include contact.html %}
 </section>

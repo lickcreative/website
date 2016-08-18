@@ -1,0 +1,18 @@
+<div class="u-center-block u-center-block--large grid grid--center">
+  {% for location in site.locations %}
+    <div class="grid__item grid__item--half">
+      <img class="" src="{{ location.image }}" alt="{{ location.title }}">
+      <span>
+        <address>
+          {% for line in location.address %}
+            {{ line }},<br>
+            {{ line }},<br>
+            {{ line }},<br>
+            {{ line }}
+          {% endfor %}
+        </address>
+        <a href="tel:{{ location.phone }}"></a>
+      </span>
+    </div>
+  {% endfor %}
+</div>
