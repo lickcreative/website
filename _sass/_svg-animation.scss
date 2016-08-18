@@ -44,3 +44,12 @@
     stroke-dashoffset: 0;
   }
 }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .path-dot,
+  .path-splash,
+  .path {
+    stroke-dasharray: 0;
+    stroke-dashoffset: 0;
+  }
+}
