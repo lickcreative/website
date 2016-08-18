@@ -1,3 +1,21 @@
+@mixin mq-small {
+  @media (min-width: $small-width) {
+    @content;
+  }
+}
+
+@mixin mq-medium {
+  @media (min-width: $medium-width) {
+    @content;
+  }
+}
+
+@mixin mq-large {
+  @media (min-width: $large-width) {
+    @content;
+  }
+}
+
 @mixin flex-center {
   display: -webkit-box;
   display: -ms-flexbox;

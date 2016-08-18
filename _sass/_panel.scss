@@ -10,7 +10,7 @@
   transition: background 0.25s ease-out;
   overflow: hidden;
   &__caption {
-    font-size: 3rem;
+    font-size: calc(2rem + 2vw);
     font-weight: 900;
     line-height: 0.8;
     text-align: center;
