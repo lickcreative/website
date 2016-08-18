@@ -176,6 +176,7 @@
     }
     &__logo {
       height: 3rem;
+      max-width: 4.5rem;
     }
     &__container {
       position: relative;
@@ -187,7 +188,7 @@
       transition: none;
     }
     &__list {
-      position: initial;
+      position: static;
       display: inline;
       transform: none;
       transition: none;
