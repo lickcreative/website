@@ -85,6 +85,7 @@
     margin-left: 0.25rem;
     width: 1.5rem;
     height: 100%;
+    max-height: 1.25rem;
     fill: inherit;
   }
   &__icon-wrapper {
@@ -176,6 +177,7 @@
     }
     &__logo {
       height: 3rem;
+      max-width: 4.5rem;
     }
     &__container {
       position: relative;
@@ -187,7 +189,7 @@
       transition: none;
     }
     &__list {
-      position: initial;
+      position: static;
       display: inline;
       transform: none;
       transition: none;
