@@ -1,7 +1,8 @@
 /*Image panels*/
 .panel {
-  position: relative;
+  position: absolute;
   padding: 2rem;
+  width: 100%;
   height: 100%;
   @include flex-center;
   background: grey;
@@ -16,7 +17,10 @@
     color: #ffffff;
     opacity: 0.75;
     -webkit-transition: opacity 0.4s ease-out, transform 0.2s ease-out;
+    -webkit-transition: opacity 0.4s ease-out, -webkit-transform 0.2s ease-out;
+    transition: opacity 0.4s ease-out, -webkit-transform 0.2s ease-out;
     transition: opacity 0.4s ease-out, transform 0.2s ease-out;
+    transition: opacity 0.4s ease-out, transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
     will-change: opacity, transform;
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
@@ -42,7 +46,7 @@
 
 @media (min-width: 40em) {
   .panel {
-    // padding: 1.5rem;
+    /* padding: 1.5rem;*/
     &:hover {
       &::after {
         opacity: 0.5;
@@ -50,7 +54,8 @@
       }
       & .panel__caption {
         opacity: 1;
-        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1);
       }
       & .play-icon {
         opacity: 1;

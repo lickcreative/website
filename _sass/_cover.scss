@@ -17,8 +17,8 @@
   background-repeat: no-repeat;
   &-video {
     width: 100%;
-    height: 52vw; // 16:9 ratio of width to height at 1280px wide
-    max-height: 720px; // Stop it growing taller once width hits max
+    height: 52vw; /* 16:9 ratio of width to height at 1280px wide*/
+    max-height: 720px; /* Stop it growing taller once width hits max*/
   }
   &__box {
     color: #ffffff;
@@ -35,12 +35,12 @@
     &__heading {
       padding: 1rem;
       border-bottom: 1px solid #ffffff;
-      // text-align: center;
+      /* text-align: center;*/
     }
     &__content {
       padding: 1rem;
-      // line-height: 1.8;
-      // text-align: center;
+      /* line-height: 1.8;*/
+      /* text-align: center;*/
     }
   }
 }

@@ -1,4 +1,3 @@
-/*Grid layout [used in the work section]*/
 .grid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6,8 +5,13 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   &--center {
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
   }
   &--gutter {
     margin-left: -1rem;
@@ -46,23 +50,27 @@
       }
     }
     &--half {
-      flex: 1 0 50%;
+      -webkit-box-flex: 1;
+          -ms-flex: 1 0 50%;
+              flex: 1 0 50%;
       min-width: 18em;
     }
     &--third {
       margin-left: 1rem;
       margin-bottom: 1rem;
-      flex: 1 0 32%;
+      -webkit-box-flex: 1;
+          -ms-flex: 1 0 32%;
+              flex: 1 0 32%;
       min-width: 15rem;
       min-height: 15rem;
       width: 20vw;
       height: 20vw;
-      // max-width: calc(33% - 1rem);
-      // max-height: calc(33% - 1rem);
-      // &:not(:last-child) {
-      //   margin-right: 1rem;
-      //   margin-bottom: 1rem;
-      // }
+      /* max-width: calc(33% - 1rem);*/
+      /* max-height: calc(33% - 1rem);*/
+      /* &:not(:last-child) {*/
+      /*   margin-right: 1rem;*/
+      /*   margin-bottom: 1rem;*/
+      /* }*/
     }
   }
 }
