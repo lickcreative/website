@@ -1,10 +1,6 @@
 ---
 title: Waltham Cross Office
-<<<<<<< HEAD
 image: "/uploads/city.jpg"
-=======
-image: http://placehold.it/500x500
->>>>>>> origin/master
 address:
 - Unit 25, The I/O Centre
 - Lea Road
@@ -12,4 +8,3 @@ address:
 - EN9 1AS
 phone: "+44-208-498-4400"
 ---
-
