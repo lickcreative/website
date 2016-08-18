@@ -36,8 +36,9 @@
         c4.47-0.8,8.14-6.64,6.72-11.38C318.27,81.39,312.96,78.8,307.82,80.34"/>
       </g>
   </svg>
-      <div class="navbar__title"><h1>The connected shopper agency</h1></div>
-    </a>
+  </a>
+    <div class="navbar__title"><h1>The connected shopper agency</h1></div>
+
     <div class="navbar__container">
     <ul class="navbar__list">
       <li class="navbar__item">
@@ -45,10 +46,10 @@
         <a {% if page.url == "/" %} href="#about" {% else %} href="{{ "#about" | prepend: site.url }}" {% endif %}>About</a>
       </li>
       <li class="navbar__item">
-        <a {% if page.url == "/" %} href="#work" {% else %} href="{{ "#work" | prepend: site.url }}" {% endif %}>Work</a>
+        <a {% if page.url == "/" %} href="#people" {% else %} href="{{ "#people" | prepend: site.url }}" {% endif %}>People</a>
       </li>
       <li class="navbar__item">
-        <a {% if page.url == "/" %} href="#people" {% else %} href="{{ "#people" | prepend: site.url }}" {% endif %}>People</a>
+        <a {% if page.url == "/" %} href="#work" {% else %} href="{{ "#work" | prepend: site.url }}" {% endif %}>Work</a>
       </li>
       <li class="navbar__item"><a {% if page.url == "/" %} href="#contact" {% else %} href="{{ "#contact" | prepend: site.url }}" {% endif %}>Contact</a></li>
       <li class="navbar__item">

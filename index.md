@@ -12,14 +12,14 @@ layout: default
   {% include clients.html %}
 </section>
 
-<section class="section u-vertical-space" id="work">
-  {% include work.html %}
-</section>
-
 <section class="section u-vertical-space" id="people">
   {% include people.html %}
 </section>
 
-<section class="section u-vertical-space" id="contact">
+<section class="section u-vertical-space" id="work">
+  {% include work.html %}
+</section>
 
+<section class="section u-vertical-space" id="contact">
+  {% include contact.html %}
 </section>

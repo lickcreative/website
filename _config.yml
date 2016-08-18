@@ -12,6 +12,9 @@ collections:
   home-sections:
     title: Home Sections
     output: false
+  locations:
+    title: Locations
+    output: false
   posts:
     title: Posts
     output: true
