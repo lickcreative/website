@@ -1,10 +1,15 @@
 ---
 title: Walthamstow Office
+<<<<<<< HEAD
 image: "/uploads/city.jpg"
+=======
+image: http://placehold.it/500x500
+>>>>>>> origin/master
 address:
-- "153-157 Blackhorse Lane"
-- "Walthamstow"
-- "London"
-- "E17 5QZ"
-phone: +44-208-498-4400
+- 153-157 Blackhorse Lane
+- Walthamstow
+- London
+- E17 5QZ
+phone: "+44-208-498-4400"
 ---
+
