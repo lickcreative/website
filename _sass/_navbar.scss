@@ -138,7 +138,7 @@
 .hamburgler-active {
   & .navbar__container {
     opacity: 1;
-    pointer-events: initial;
+    pointer-events: auto;
   }
   & .navbar__list {
     transform: translate(-50%, -50%) scale(1);
@@ -185,7 +185,7 @@
       padding: 0;
       background: transparent;
       opacity: 1;
-      pointer-events: initial;
+      pointer-events: auto;
       transition: none;
     }
     &__list {
