@@ -45,9 +45,9 @@
         <!-- If/else ensures correct in-page anchor link on homepage, and full URL elsewhere -->
         <a {% if page.url == "/" %} href="#about" {% else %} href="{{ "#about" | prepend: site.url }}" {% endif %}>About</a>
       </li>
-      <li class="navbar__item">
+      <!-- <li class="navbar__item">
         <a {% if page.url == "/" %} href="#people" {% else %} href="{{ "#people" | prepend: site.url }}" {% endif %}>People</a>
-      </li>
+      </li> -->
       <li class="navbar__item">
         <a {% if page.url == "/" %} href="#work" {% else %} href="{{ "#work" | prepend: site.url }}" {% endif %}>Work</a>
       </li>

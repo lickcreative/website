@@ -26,22 +26,21 @@
     opacity: 0;
     will-change: transform;
     transform: translate3d(0, 0, 0);
-    /* transition: opacity 2s linear, transform 15s linear;*/
     &:nth-child(n+1) {
       -webkit-transform-origin: top right;
               transform-origin: top right;
     }
     &:nth-child(2n+1) {
-      -webkit-transform-origin: top right;
-              transform-origin: top right;
-    }
-    &:nth-child(3n+1) {
-      -webkit-transform-origin: top left;
-              transform-origin: top left;
-    }
-    &:nth-child(4n+1) {
       -webkit-transform-origin: bottom right;
               transform-origin: bottom right;
+    }
+    &:nth-child(3n+1) {
+      -webkit-transform-origin: bottom left;
+              transform-origin: bottom left;
+    }
+    &:nth-child(4n+1) {
+      -webkit-transform-origin: bottom left;
+              transform-origin: bottom left;
     }
   }
   &__logo {
@@ -75,8 +74,8 @@
 .js-animating {
   /* opacity: 1;*/
   /* transform: scale(1.2);*/
-  -webkit-animation: fade 2s forwards, zoom 15s linear forwards;
-          animation: fade 2s forwards, zoom 15s linear forwards;
+    -webkit-animation: fade 2s forwards, zoom 15s linear forwards;
+            animation: fade 2s forwards, zoom 15s linear forwards;
 }
 
 @media (min-width: 40em) {

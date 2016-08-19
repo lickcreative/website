@@ -3,17 +3,17 @@ title: Hero
 date: 2016-08-16 09:57:00 Z
 published: false
 position: 0
-hero images:
-- 
-- 
-- 
+hero_images:
+- '/uploads/hero/grass_desktop.jpg'
+- '/uploads/hero/paint_desktop.jpg'
+- '/uploads/hero/jelly_desktop.jpg'
+- '/uploads/hero/honey_desktop.jpg'
 ---
 
-<div class="hero" id="slideshow">
-    <img class="hero__image js-animating" src="{{ "/img/ice-cream.jpg" | prepend: site.baseurl }}">
-    <img class="hero__image" src="{{ "/img/jelly-beans.jpg" | prepend: site.baseurl }}">
-    <img class="hero__image" src="{{ "/img/honey.jpg" | prepend: site.baseurl }}">
-    <img class="hero__image" src="{{ "/img/grass.jpg" | prepend: site.baseurl }}">
+<div class="hero cover" id="js-slideshow">
+  {% for image in page.hero_images %}
+    <img class="hero__image {% if forloop.index == 1 %}js-animating{% endif %}" src="{{ image }}">
+  {% endfor %}
     <svg class="hero__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 327 219">
         <g fill="none" stroke="#ffffff" stroke-width="3">
             <path class="path-dot draw-dot" d="M85.47,94c3.98-1.07,6.79-3.34,8.44-6.83c1.65-3.47,1.92-7.29,0.8-11.44c-0.89-3.3-2.66-5.69-5.32-7.15

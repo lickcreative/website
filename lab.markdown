@@ -1,9 +1,9 @@
 ---
 title: Retail Lab
 date: 2016-07-04 21:02:00 Z
-layout: case_study
+layout: work-page
 cover_image: "/img/lab.jpg"
-images:
+work_assets:
 - "/img/hologram.jpg"
 - "/img/hologram.jpg"
 - "/img/hologram.jpg"
