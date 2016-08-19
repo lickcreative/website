@@ -5,9 +5,7 @@
         <img class="u-overlay__image" src="{{ location.image }}" alt="{{ location.title }}">
         <div class="u-overlay__text u-big-text">
           <address>
-            {% for line in location.address %}
-              {{ line }}<br>
-            {% endfor %}
+            {% for line in location.address %}{{ line }}<br>{% endfor %}
           </address>
           <span>T: <a href="tel:{{ location.phone }}">{{ location.phone }}</a></span>
         </div>
