@@ -2,10 +2,6 @@
 title: Lick Creative | Where ideas come true
 timezone: UTC
 collections:
-  case_studies:
-    title: Case Studies
-    output: true
-    permalink: "/case_studies/:path/"
   clients:
     title: Clients
     output: false
@@ -21,7 +17,25 @@ collections:
   uploads:
     title: Uploads
     output: true
+  work:
+    title: Work
+    output: true
+    permalink: "/work/:path/"
 defaults:
+- scope:
+    path: ''
+    type: work
+  values:
+    layout: work-page
+    cover_image: 
+    work_assets:
+    - ''
+    - ''
+    - ''
+    thumbnail-image_mobile@1x: ''
+    thumbnail-image_mobile@2x: ''
+    thumbnail-image_desktop@1x: ''
+    thumbnail-image_desktop@2x: ''
 - scope:
     path: ''
     type: case_studies

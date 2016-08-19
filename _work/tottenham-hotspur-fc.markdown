@@ -1,11 +1,14 @@
 ---
-title: Tottenham Hotspur FC
+title: THFC
 date: 2016-07-20 21:30:00 Z
 cover_image: "/uploads/spurs__header.jpg"
-images:
+work_assets:
 - "/uploads/spurs_weather.jpg"
 - "/uploads/spurs-in-store-1280.jpg"
-layout: case_study
+thumbnail-image_mobile1x: "/uploads/work/tottenham_mobile@1x.jpg"
+thumbnail-image_mobile2x: "/uploads/work/tottenham_mobile@2x.jpg"
+thumbnail-image_desktop1x: "/uploads/work/tottenham_desktop@1x.jpg"
+thumbnail-image_desktop2x: "/uploads/work/tottenham_desktop@2x.jpg"
 ---
 
 For over three years, Lick has worked with one of the most dynamic football clubs in Europe. Helping to promote their new kit launches, on-line commerce and promotions and working closely with the club and it’s players helped grow their

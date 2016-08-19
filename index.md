@@ -3,23 +3,9 @@ title: Home
 layout: default
 ---
 
-<section class="section u-vertical-space" id="home">
-  {% include hero.html %}
+{% assign sections = site.home-sections | sort:"position" %}
+{% for section in sections %}
+<section class="section u-vertical-space" id="{{ section.title }}">
+  {{ section.content }}
 </section>
-
-<section class="section u-vertical-space" id="about">
-  {% include about.html %}
-  {% include clients.html %}
-</section>
-
-<section class="section u-vertical-space" id="people">
-  {% include people.html %}
-</section>
-
-<section class="section u-vertical-space" id="work">
-  {% include work.html %}
-</section>
-
-<section class="section u-vertical-space" id="contact">
-  {% include contact.html %}
-</section>
+{% endfor %}
