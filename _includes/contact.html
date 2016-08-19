@@ -4,9 +4,8 @@
       <div class="u-overlay">
         <img class="u-overlay__image" src="{{ location.image }}" alt="{{ location.title }}">
         <div class="u-overlay__text u-big-text">
-          <address>
-            {% for line in location.address %}{{ line }}<br>{% endfor %}
-          </address>
+          <!-- Has to be on one line to avoid weird whitespace in final HTML -->
+          <address>{% for line in location.address %}{{ line }}<br>{% endfor %}</address>
           <span>T: <a href="tel:{{ location.phone }}">{{ location.phone }}</a></span>
         </div>
       </div>
