@@ -22,15 +22,15 @@
   }
   &__box {
     color: #ffffff;
-    background: hsla(0, 0, 0, 0.8);
-    background: -webkit-linear-gradient(
-      transparent,
-      hsla(0,0,0,0.8) 25%
-      );
-    background: linear-gradient(
-      transparent,
-      hsla(0,0,0,0.8) 25%
-      );
+    background: hsla(0, 0, 0, 0.75);
+    // background: -webkit-linear-gradient(
+    //   transparent,
+    //   hsla(0,0,0,0.75) 25%
+    //   );
+    // background: linear-gradient(
+    //   transparent,
+    //   hsla(0,0,0,0.75) 25%
+    //   );
     z-index: 10;
     &__heading {
       padding: 1rem;
