@@ -21,7 +21,7 @@
     max-height: 720px; /* Stop it growing taller once width hits max*/
   }
   &__box {
-    color: #ffffff;
+    color: hsl(100, 100, 100);
     background: hsla(0, 0, 0, 0.75);
     // background: -webkit-linear-gradient(
     //   transparent,
@@ -32,9 +32,14 @@
     //   hsla(0,0,0,0.75) 25%
     //   );
     z-index: 10;
+    &--clear {
+      color: hsl(100, 100, 100);
+      background: transparent;
+      border: 1px solid;
+    }
     &__heading {
       padding: 1rem;
-      border-bottom: 1px solid #ffffff;
+      border-bottom: 1px solid;
       /* text-align: center;*/
     }
     &__content {

@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<section class="section u-vertical-space">
+  <div class="cover" style="background-image: url('{{ page.cover_image }}');">
+    <div class="cover__box cover__box--clear">
+      <h1 class="cover__box__heading u-text-center">{{ page.title }}</h1>
+      <div class="cover__box__content u-big-text">{{ content }}</div>
+    </div>
+  </div>
+</section>
+<section class="section u-vertical-space">
+  <div class="grid grid--gutter u-center-block u-center-block--large">
+    {% for image in page.work-assets %}
+    <div class="grid__item grid__item--third">
+      <img class="u-object-fit" src="{{ image }}">
+    </div>
+    {% endfor %}
+  </div>
+</section>

@@ -2,32 +2,36 @@
 title: Lick Creative | Where ideas come true
 timezone: UTC
 collections:
-  clients:
-    title: Clients
-    output: false
   home-sections:
     title: Home Sections
     output: false
+  clients:
+    title: Clients
+    output: false
+  work:
+    title: Work
+    output: true
+    permalink: "/work/:path/"
   locations:
     title: Locations
     output: false
+  lab:
+    title: Lab
+    output: true
+    permalink: "/retail-lab/:path"
   posts:
     title: Posts
     output: true
   uploads:
     title: Uploads
     output: true
-  work:
-    title: Work
-    output: true
-    permalink: "/work/:path/"
 defaults:
 - scope:
     path: ''
     type: work
   values:
     layout: work-page
-    cover_image: 
+    cover_image:
     work_assets:
     - ''
     - ''
@@ -36,17 +40,17 @@ defaults:
     mobile_image: ''
 - scope:
     path: ''
-    type: case_studies
+    type: lab
   values:
-    layout: case_study
-    client_overview: 
-    cover_image: 
+    layout: lab_cover
+    cover-image_desktop: '/uploads/lab/lab_desktop.jpg'
+    cover-image_mobile: '/uploads/lab/lab_mobile.jpg'
     images:
     - ''
 email: oliver.phillips@lickcreative.com
 description: |
   Lick is a creative agency based in London.
-baseurl: 
+baseurl:
 url: http://127.0.0.1:4000/
 twitter_username: wearelick
 markdown: kramdown
