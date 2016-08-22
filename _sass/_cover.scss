@@ -1,5 +1,6 @@
 .cover {
   position: relative;
+  padding: 1rem;
   min-height: 600px;
   min-height: 100vh;
   display: -webkit-box;
@@ -11,28 +12,48 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  color: hsl(100, 100, 100);
   overflow: hidden;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  &--lab {
+    & > * {
+      z-index: 50;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: hsla(0, 0, 0, 0.2);
+      z-index: 0;
+    }
+  }
   &-video {
     width: 100%;
     height: 52vw; /* 16:9 ratio of width to height at 1280px wide*/
     max-height: 720px; /* Stop it growing taller once width hits max*/
   }
+  &__nav {
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%);
+    &--left {
+      left: 3rem;
+    }
+    &--right {
+      right: 3rem;
+    }
+  }
   &__box {
-    color: hsl(100, 100, 100);
     background: hsla(0, 0, 0, 0.75);
-    // background: -webkit-linear-gradient(
-    //   transparent,
-    //   hsla(0,0,0,0.75) 25%
-    //   );
-    // background: linear-gradient(
-    //   transparent,
-    //   hsla(0,0,0,0.75) 25%
-    //   );
     z-index: 10;
-    &--clear {
+    &--lab {
+      order: -1; //So arrows sit under box on mobile
+      margin: 1rem;
       color: hsl(100, 100, 100);
       background: transparent;
       border: 1px solid;
@@ -40,12 +61,9 @@
     &__heading {
       padding: 1rem;
       border-bottom: 1px solid;
-      /* text-align: center;*/
     }
     &__content {
       padding: 1rem;
-      /* line-height: 1.8;*/
-      /* text-align: center;*/
     }
   }
 }
@@ -56,14 +74,19 @@
         -ms-flex-align: center;
                 -ms-grid-row-align: center;
             align-items: center;
+    &--lab {
+    }
     &__box {
       max-width: 60rem;
       height: auto;
-      // background: hsla(0, 0, 0, 0.8);
+      &--lab {
+        order: inherit;
+        max-width: 40rem;
+      }
       &__heading {
       }
       &__content {
-        padding: 3rem;
+        padding: 2rem;
         font-size: 1.25rem;
       }
     }

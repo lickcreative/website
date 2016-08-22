@@ -17,7 +17,12 @@
   text-align: center;
 }
 
-.u-vertical-space {
+.u-text-justify {
+  text-align: justify;
+  text-align-last: center;
+}
+
+.u-vertical-space:not(:last-child) {
   @include vertical-space;
 }
 
@@ -45,7 +50,7 @@
 .u-big-text {
   font-size: 1.125rem;
   @media(min-width: 50em) {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
 
