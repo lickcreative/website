@@ -5,10 +5,8 @@ work_assets:
 - "/uploads/become-iron-man.jpg"
 cover_video: https://www.youtube.com/embed/9gSDjL2DVDM
 layout: work-page-video
-thumbnail-image_mobile1x: "/uploads/work/disney_mobile@1x.jpg"
-thumbnail-image_mobile2x: "/uploads/work/disney_mobile@2x.jpg"
-thumbnail-image_desktop1x: "/uploads/work/disney_desktop@1x.jpg"
-thumbnail-image_desktop2x: "/uploads/work/disney_desktop@2x.jpg"
+desktop_image: "/uploads/work/disney_mobile@1x.jpg"
+mobile_image: "/uploads/work/disney_desktop@1x.jpg"
 ---
 
 ## Overview
