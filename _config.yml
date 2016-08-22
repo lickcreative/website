@@ -32,10 +32,10 @@ defaults:
     - ''
     - ''
     - ''
-    thumbnail-image_mobile@1x: ''
-    thumbnail-image_mobile@2x: ''
-    thumbnail-image_desktop@1x: ''
-    thumbnail-image_desktop@2x: ''
+    thumbnail-image_mobile1x: ''
+    thumbnail-image_mobile2x: ''
+    thumbnail-image_desktop1x: ''
+    thumbnail-image_desktop2x: ''
 - scope:
     path: ''
     type: case_studies
