@@ -1,5 +1,5 @@
 ---
-title: Better
+title: Leeds Office
 image: "/uploads/city.jpg"
 address:
 - Unit 5, St David’s Court
