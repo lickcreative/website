@@ -6,10 +6,8 @@ work_assets:
 - "/uploads/molton-brown-box.jpg"
 - "/uploads/molton-brown-box.jpg"
 - "/uploads/molton-brown-box.jpg"
-thumbnail-image_mobile1x: "/uploads/work/better_mobile@1x.jpg"
-thumbnail-image_mobile2x: "/uploads/work/better_mobile@2x.jpg"
-thumbnail-image_desktop1x: "/uploads/work/better_desktop@1x.jpg"
-thumbnail-image_desktop2x: "/uploads/work/better_desktop@2x.jpg"
+desktop_image: "/uploads/work/gll_mobile@1x.jpg"
+mobile_image: "/uploads/work/gll_desktop@1x.jpg"
 ---
 
 Identified new channels to promote the event and tell a story. Delivered a bespoke experience for flagship stores. Engaged and activated increased in-store conversion through brand ambassadors and digital marketing. Advised on wearable tech to enhance activation. Secured global rollout — including USA, Japan, Germany and the Middle East.

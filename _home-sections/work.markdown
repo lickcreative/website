@@ -9,7 +9,7 @@ position: 3
 {% for entry in site.work %}
   <div class="grid__item grid__item--work">
     <a class="panel" href="{{  }}">
-      <img class="u-object-fit" src="{{ entry.thumbnail-image_desktop1x }}" alt="" />
+      <img class="u-object-fit" src="{{ entry.desktop_image }}" alt="" />
       <h3 class="panel__caption">{{ entry.title }}</h3>
     </a>
   </div>
