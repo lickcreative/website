@@ -7,21 +7,25 @@ layout: default
     <div class="cover__box cover__box--lab">
       <div class="cover__box__content u-big-text u-text-justify">{{ content }}</div>
     </div>
-    {% assign pages = site.collections | sort:"position" %}
-    {% if page.previous.url %}
-    <a class="cover__nav cover__nav--left no-link-style" href="{{ page.previous.url }}">
-      <svg class="i-arrow-left" viewBox="0 0 32 32" width="64" height="64" fill="none" stroke="currentcolor" stroke-width="6.25%">
-        <path d="M20 30 L8 16 20 2"></path>
-      </svg>
-    </a>
-    {% endif %}
-    {% if page.next.url %}
-    <a class="cover__nav cover__nav--right no-link-style" href="{{ page.next.url }}">
-      <svg class="i-arrow--right" viewBox="0 0 32 32" width="64" height="64" fill="none" stroke="currentcolor" stroke-width="6.25%">
-              <path d="M12 30 L24 16 12 2"></path>
-      </svg>
-    </a>
-    {% endif %}
+    {% assign lab_sorted = site.lab | sort:"position" %}
+    {% for doc in lab_sorted %}
+      {% if doc.url == page.url %}
+        {% if doc.previous.url %}
+        <a class="cover__nav cover__nav--left no-link-style" href="{{ doc.previous.url }}">
+          <svg class="i-arrow-left" viewBox="0 0 32 32" width="64" height="64" fill="none" stroke="currentcolor" stroke-width="6.25%">
+            <path d="M20 30 L8 16 20 2"></path>
+          </svg>
+        </a>
+        {% endif %}
+        {% if doc.next.url %}
+        <a class="cover__nav cover__nav--right no-link-style" href="{{ doc.next.url }}">
+          <svg class="i-arrow--right" viewBox="0 0 32 32" width="64" height="64" fill="none" stroke="currentcolor" stroke-width="6.25%">
+            <path d="M12 30 L24 16 12 2"></path>
+          </svg>
+        </a>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
   </div>
 </section>
 <!-- <section class="section u-vertical-space">
