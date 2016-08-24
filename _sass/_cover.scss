@@ -94,9 +94,9 @@
             align-items: center;
     &__nav {
       position: absolute;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-              transform: translateY(-50%);
+      bottom: 50%;
+      -webkit-transform: translateY(50%);
+              transform: translateY(50%);
       &--left {
         left: 2rem;
       }
