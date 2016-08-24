@@ -1,5 +1,5 @@
 ---
-title: 2 Overview
+title: Overview
 date: 2016-07-04 21:02:00 Z
 position: 1
 cover_image: "/uploads/lab/lab2_desktop.jpg"
