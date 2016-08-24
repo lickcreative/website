@@ -4,20 +4,10 @@ layout: default
 
 <section class="section u-vertical-space">
   <div class="cover cover--lab" style="background-image: url('{{ page.cover_image }}');">
-    {% if page.logo_image %}
-      <div class="cover__box cover__box--lab">
-        <img class="cover__lab-logo" src="/uploads/lab/lab-logo.svg" alt="Lab logo">
-      </div>
-    {% endif %}
-    {% assign contents = page.content | strip_newlines %}
-    {% if contents != "" %}
-      <div class="cover__box cover__box--lab">
-        {% if page.has_title == true %}
-          <h1 class="cover__heading cover__heading--lab u-text-center">{{ page.title }}</h1>
-        {% endif %}
-        <div class="cover__content cover__content--lab u-text-justify">{{ content }}</div>
-      </div>
-    {% endif %}
+    <div class="cover__box cover__box--lab">
+      <h1 class="cover__heading u-text-center">{{ page.title }}</h1>
+      <div class="cover__content u-big-text u-text-justify">{{ content }}</div>
+    </div>
       {% capture the_collection %}{{page.collection}}{% endcapture %}
       {% if page.collection %}
           {% assign document = site[the_collection] | sort: "position" %}
@@ -60,7 +50,6 @@ layout: default
       {% endif %}
   </div>
 </section>
-{% if page.work-assets %}
 <section class="section u-vertical-space">
   <div class="grid grid--gutter u-center-block u-center-block--large">
     {% for image in page.work-assets %}
@@ -70,4 +59,3 @@ layout: default
     {% endfor %}
   </div>
 </section>
-{% endif %}

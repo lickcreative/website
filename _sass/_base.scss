@@ -28,7 +28,7 @@ body {
     font-weight: $base-font-weight;
     line-height: $base-line-height;
     color: $text-color;
-    background-color: $background-color;
+    background-color: $bg-color;
     -webkit-text-size-adjust: 100%;
     -webkit-font-feature-settings: "kern" 1;
     -o-font-feature-settings: "kern" 1;
@@ -42,33 +42,25 @@ body {
     }
 }
 
+p {
+  text-align: justify;
+  text-align-last: center;
+  &:not(:last-child) {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+}
 
-
-/**
- * Set `margin-bottom` to maintain vertical rhythm
- */
-// h1, h2, h3, h4, h5, h6,
-// p, blockquote, pre,
-// ul, ol, dl, figure,
-// %vertical-rhythm {
-//     margin-bottom: $spacing-unit;
-// }
-
-
-
-/**
- * Images
- */
 img {
     max-width: 100%;
     vertical-align: middle;
     height: auto;
 }
 
+p ~ img {
+  margin-bottom: 2rem;
+}
 
-/**
- * Lists
- */
 ul, ol {
     margin-left: $spacing-unit;
 }
@@ -80,15 +72,9 @@ li {
     }
 }
 
-
-
-/**
- * Headings
- */
 h1, h2, h3, h4, h5, h6 {
     font-weight: $base-font-weight;
 }
-
 
 h1,
 h2,
@@ -101,8 +87,12 @@ h4 {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+
 h1 {
-  font-size: 3rem;
+  font-size: 1.5rem;
+  @media (min-width: 50em) {
+    font-size: 3rem;
+  }
 }
 
 h3 {
@@ -124,23 +114,6 @@ a {
   &:not(.no-link-style) {
     border-bottom: 1px solid;
   }
-}
-
-a {
-  // color: $brand-color;
-
-  // &:visited {
-  //     color: darken($brand-color, 15%);
-  // }
-
-  // &:hover {
-  //     text-decoration: underline;
-  // }
-}
-
-p ~ p, p ~ img {
-  margin: 0;
-  margin-bottom: 1rem;
 }
 
 .section {

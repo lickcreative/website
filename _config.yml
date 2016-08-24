@@ -31,7 +31,7 @@ defaults:
     type: work
   values:
     layout: work-page
-    cover_image: 
+    cover_image:
     work_assets:
     - ''
     - ''
@@ -43,14 +43,17 @@ defaults:
     type: lab
   values:
     layout: lab_cover
+    has_title: true
     cover-image_desktop: "/uploads/lab/lab_desktop.jpg"
     cover-image_mobile: "/uploads/lab/lab_mobile.jpg"
     images:
     - ''
+    - ''
+    - ''
 email: oliver.phillips@lickcreative.com
 description: |
   Lick is a creative agency based in London.
-baseurl: 
+baseurl:
 url: http://127.0.0.1:4000/
 twitter_username: wearelick
 markdown: kramdown
