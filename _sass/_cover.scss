@@ -12,12 +12,17 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  color: hsl(100, 100, 100);
+  color: $white;
   overflow: hidden;
+  background-color: $dark-grey; /*Fallback to ensure text shows sans image bg*/
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   &--lab {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
     & > * {
       z-index: 50;
     }
@@ -39,32 +44,45 @@
   }
   &__nav {
     position: absolute;
-    top: 50%;
-    transform: translateX(-50%);
+    bottom: 2rem;
     &--left {
-      left: 3rem;
+      left: 2rem;
     }
     &--right {
-      right: 3rem;
+      right: 2rem;
     }
   }
   &__box {
     background: hsla(0, 0, 0, 0.75);
     z-index: 10;
     &--lab {
-      order: -1; //So arrows sit under box on mobile
+      -webkit-box-ordinal-group: 0;
+          -ms-flex-order: -1;
+              order: -1; /*So arrows sit under box on mobile*/
       margin: 1rem;
-      color: hsl(100, 100, 100);
+      color: $white;
       background: transparent;
+      /* border: 1px solid;*/
+    }
+  }
+  &__heading {
+    padding: 1rem;
+    border-bottom: 1px solid;
+    font-weight: 900;
+    &--lab {
+      margin-bottom: 1rem;
+      padding: 0.5rem;
       border: 1px solid;
     }
-    &__heading {
-      padding: 1rem;
-      border-bottom: 1px solid;
+  }
+  &__content {
+    padding: 1rem;
+    &--lab {
+      padding: 0;
     }
-    &__content {
-      padding: 1rem;
-    }
+  }
+  &__lab-logo {
+    width: 100%;
   }
 }
 
@@ -74,21 +92,36 @@
         -ms-flex-align: center;
                 -ms-grid-row-align: center;
             align-items: center;
-    &--lab {
+    &__nav {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      &--left {
+        left: 2rem;
+      }
+      &--right {
+        right: 2rem;
+      }
     }
     &__box {
-      max-width: 60rem;
+      max-width: 50rem;
       height: auto;
       &--lab {
-        order: inherit;
+        -webkit-box-ordinal-group: NaN;
+            -ms-flex-order: inherit;
+                order: inherit;
         max-width: 40rem;
       }
-      &__heading {
+    }
+    &__content {
+      padding: 2rem;
+      &--lab {
+        padding: 0;
       }
-      &__content {
-        padding: 2rem;
-        font-size: 1.25rem;
-      }
+    }
+    &__lab-logo {
+      width: 40rem;
     }
   }
 }

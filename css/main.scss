@@ -13,17 +13,16 @@ $base-line-height: 1.5;
 
 $spacing-unit:     1rem;
 //Brand colours
+$white: hsl(0, 0, 100);
+$dark-grey: hsl(240, 5, 25);
 $pink: #e40079;
 $blue: #18263c;
 $orange: #ef7f31;
 
-$text-color:       hsl(0, 0, 25);
-$background-color: #ffffff;
-$brand-color:      $pink;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$text-color:  $dark-grey;
+$bg-color:    $white;
+$brand-color: $pink;
 
 // Width of the content area
 $content-width:    80rem;

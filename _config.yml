@@ -43,9 +43,12 @@ defaults:
     type: lab
   values:
     layout: lab_cover
+    has_title: true
     cover-image_desktop: "/uploads/lab/lab_desktop.jpg"
     cover-image_mobile: "/uploads/lab/lab_mobile.jpg"
     images:
+    - ''
+    - ''
     - ''
 email: oliver.phillips@lickcreative.com
 description: |
