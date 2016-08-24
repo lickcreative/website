@@ -8,6 +8,10 @@ collections:
   home-sections:
     title: Home Sections
     output: false
+  lab:
+    title: Lab
+    output: true
+    permalink: "/retail-lab/:path"
   locations:
     title: Locations
     output: false
@@ -36,11 +40,11 @@ defaults:
     mobile_image: ''
 - scope:
     path: ''
-    type: case_studies
+    type: lab
   values:
-    layout: case_study
-    client_overview: 
-    cover_image: 
+    layout: lab_cover
+    cover-image_desktop: "/uploads/lab/lab_desktop.jpg"
+    cover-image_mobile: "/uploads/lab/lab_mobile.jpg"
     images:
     - ''
 email: oliver.phillips@lickcreative.com
