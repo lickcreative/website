@@ -1,5 +1,5 @@
 ---
-title: 3 Audience Monitoring
+title: Audience Monitoring
 date: 2016-07-04 21:02:00 Z
 position: 2
 cover_image: "/uploads/lab/lab2_desktop.jpg"
