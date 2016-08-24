@@ -1,8 +1,8 @@
 ---
 title: Audience Monitoring
 date: 2016-07-04 21:02:00 Z
-has_title: true
 position: 2
+has_title: true
 cover_image: "/uploads/lab/lab2_desktop.jpg"
 work_assets:
 - "/img/hologram.jpg"
