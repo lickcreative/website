@@ -39,12 +39,6 @@
     height: 52vw; /* 16:9 ratio of width to height at 1280px wide*/
     max-height: 720px; /* Stop it growing taller once width hits max*/
   }
-  &__nav {
-    &--left {
-    }
-    &--right {
-    }
-  }
   &__box {
     margin-top: 2.5rem;
     background: hsla(0, 0, 0, 0.75);
@@ -53,10 +47,8 @@
       -webkit-box-ordinal-group: 0;
           -ms-flex-order: -1;
               order: -1; /*So arrows sit under box on mobile*/
-      // margin: 1rem;
       color: $white;
       background: transparent;
-      /* border: 1px solid;*/
     }
   }
   &__heading {
