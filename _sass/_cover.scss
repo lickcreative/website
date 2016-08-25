@@ -8,9 +8,6 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  // -webkit-box-align: end;
-  //     -ms-flex-align: end;
-  //         align-items: flex-end;
   flex-wrap: wrap;
   color: $white;
   overflow: hidden;
@@ -86,6 +83,7 @@
 
 @media (min-width: 50em) {
   .cover {
+    padding: 0;
     justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
