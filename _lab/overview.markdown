@@ -2,6 +2,7 @@
 title: Overview
 date: 2016-07-04 21:02:00 Z
 position: 1
+has_title: false
 cover_image: "/uploads/lab/lab2_desktop.jpg"
 layout: lab_cover
 ---
