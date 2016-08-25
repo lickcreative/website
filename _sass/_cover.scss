@@ -6,12 +6,13 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: flex-start;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   color: $white;
   overflow: hidden;
-  background-color: hsl(200, 10, 80); /*Fallback to ensure text shows sans image bg*/
+  background-color: hsl(200, 10, 80); /*Ensure text shows without image bg*/
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -38,6 +39,20 @@
     width: 100%;
     height: 52vw; /* 16:9 ratio of width to height at 1280px wide*/
     max-height: 720px; /* Stop it growing taller once width hits max*/
+  }
+  &__nav {
+    width: 100%;
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__arrow {
+    &--left {
+      margin-right: auto;
+    }
+    &--right {
+      margin-left: auto;
+    }
   }
   &__box {
     margin-top: 2.5rem;
@@ -76,6 +91,7 @@
 @media (min-width: 50em) {
   .cover {
     padding: 0;
+    flex-direction: row;
     justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -83,6 +99,7 @@
             align-items: center;
     &__nav {
       position: absolute;
+      margin: 0;
       bottom: 50%;
       -webkit-transform: translateY(50%);
               transform: translateY(50%);
