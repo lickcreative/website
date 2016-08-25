@@ -6,15 +6,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
   color: $white;
   overflow: hidden;
-  background-color: $dark-grey; /*Fallback to ensure text shows sans image bg*/
+  background-color: hsl(200, 10, 80); /*Fallback to ensure text shows sans image bg*/
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -43,23 +40,20 @@
     max-height: 720px; /* Stop it growing taller once width hits max*/
   }
   &__nav {
-    position: absolute;
-    bottom: 2rem;
     &--left {
-      left: 2rem;
     }
     &--right {
-      right: 2rem;
     }
   }
   &__box {
+    margin-top: 2.5rem;
     background: hsla(0, 0, 0, 0.75);
     z-index: 10;
     &--lab {
       -webkit-box-ordinal-group: 0;
           -ms-flex-order: -1;
               order: -1; /*So arrows sit under box on mobile*/
-      margin: 1rem;
+      // margin: 1rem;
       color: $white;
       background: transparent;
       /* border: 1px solid;*/
@@ -68,6 +62,7 @@
   &__heading {
     padding: 1rem;
     border-bottom: 1px solid;
+    font-size: 1.125rem;
     font-weight: 900;
     &--lab {
       margin-bottom: 1rem;
@@ -88,6 +83,8 @@
 
 @media (min-width: 50em) {
   .cover {
+    padding: 0;
+    justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
                 -ms-grid-row-align: center;
@@ -105,6 +102,7 @@
       }
     }
     &__box {
+      margin: 0;
       max-width: 50rem;
       height: auto;
       &--lab {
@@ -114,8 +112,12 @@
         max-width: 40rem;
       }
     }
+    &__heading {
+      font-size: 2rem;
+    }
     &__content {
       padding: 2rem;
+      font-size: 1.125rem;
       &--lab {
         padding: 0;
       }
