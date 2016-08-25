@@ -44,19 +44,23 @@ layout: default
           {% assign prev = links %}
       {% endfor %}
 
-      {% if prevurl %}
-        <a class="cover__nav cover__nav--left no-link-style" href="{{ prevurl }}">
-          <svg class="i-arrow-left" viewBox="0 0 32 32" width="64" height="64" fill="none" stroke="currentcolor" stroke-width="6.25%">
-            <path d="M20 30 L8 16 20 2"></path>
-          </svg>
-        </a>
-      {% endif %}
-      {% if nexturl %}
-        <a class="cover__nav cover__nav--right no-link-style" href="{{ nexturl }}">
-          <svg class="i-arrow--right" viewBox="0 0 32 32" width="64" height="64" fill="none" stroke="currentcolor" stroke-width="6.25%">
-            <path d="M12 30 L24 16 12 2"></path>
-          </svg>
-        </a>
+      {% if prevurl or nexturl %}
+        <div class="cover__nav">
+          {% if prevurl %}
+            <a class="cover__arrow cover__arrow--left no-link-style" href="{{ prevurl }}">
+              <svg class="i-arrow-left" viewBox="0 0 32 32" width="64" height="64" fill="none" stroke="currentcolor" stroke-width="6.25%">
+                <path d="M20 30 L8 16 20 2"></path>
+              </svg>
+            </a>
+          {% endif %}
+          {% if nexturl %}
+            <a class="cover__arrow cover__arrow--right no-link-style" href="{{ nexturl }}">
+              <svg class="i-arrow--right" viewBox="0 0 32 32" width="64" height="64" fill="none" stroke="currentcolor" stroke-width="6.25%">
+                <path d="M12 30 L24 16 12 2"></path>
+              </svg>
+            </a>
+          {% endif %}
+        </div>
       {% endif %}
   </div>
 </section>
