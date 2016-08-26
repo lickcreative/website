@@ -82,7 +82,7 @@
     z-index: 10;
     @include mq-medium {
       margin: 0;
-      max-width: 50rem;
+      max-width: 55rem;
       height: auto;
     }
     &--primary {
@@ -106,7 +106,7 @@
     font-size: 1.125rem;
     font-weight: 900;
     @include mq-medium {
-      font-size: 2rem;
+      font-size: 3rem;
     }
     &--lab {
       margin-bottom: 1rem;
@@ -117,7 +117,7 @@
   &__content {
     padding: 1rem;
     @include mq-medium {
-      padding: 2rem;
+      padding: 3.5rem;
       font-size: 1.125rem;
     }
     @include mq-large {

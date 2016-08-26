@@ -14,9 +14,7 @@
 }
 
 .u-text-center {
-  @include mq-medium {
     text-align: center;
-  }
 }
 
 .u-text-justify {
@@ -24,12 +22,13 @@
   text-align-last: center;
 }
 
-.u-vertical-space + .u-vertical-space {
+.u-vertical-space {
   @include vertical-space;
 }
 
 .u-center-block {
-  // margin: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
   @media(min-width: 50em) {

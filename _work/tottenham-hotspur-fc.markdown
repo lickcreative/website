@@ -1,5 +1,5 @@
 ---
-title: THFC
+title: Tottenham Hotspur
 date: 2016-07-20 21:30:00 Z
 cover_image: "/uploads/tottenham_cover.jpg"
 desktop_image: "/uploads/work/tottenham_desktop@1x.jpg"
