@@ -1,11 +1,7 @@
 ---
 title: Adidas
 date: 2016-07-21 13:28:00 Z
-cover_image: "/uploads/molton-brown-1280.jpg"
-work_assets:
-- "/uploads/molton-brown-box.jpg"
-- "/uploads/molton-brown-box.jpg"
-- "/uploads/molton-brown-box.jpg"
+cover_image: "/uploads/adidas_cover.jpg"
 desktop_image: "/uploads/work/adidas_mobile@1x.jpg"
 mobile_image: "/uploads/work/adidas_desktop@1x.jpg"
 ---
