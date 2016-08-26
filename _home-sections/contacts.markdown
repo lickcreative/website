@@ -35,7 +35,7 @@ position: 4
       <label for="body">Your message</label>
       <textarea name="body" rows="3" placeholder="Hey Lick…" required></textarea>
 
-      <input type="hidden" name="_next" value="">
+      <input type="hidden" name="_next" value="/form-submitted.html">
       <input type="hidden" name="_subject" value="New website submission" />
 
       <input type="submit" value="Send" class="blue">

@@ -85,6 +85,9 @@
       max-width: 50rem;
       height: auto;
     }
+    &--primary {
+      background: rgba($brand-color, 0.7);
+    }
     &--lab {
       -ms-flex-order: -1;
       order: -1; /*So arrows sit under box on mobile*/

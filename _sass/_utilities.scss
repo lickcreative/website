@@ -24,7 +24,7 @@
   text-align-last: center;
 }
 
-.u-vertical-space {
+.u-vertical-space + .u-vertical-space {
   @include vertical-space;
 }
 
