@@ -10,4 +10,6 @@ desktop_image: "/uploads/work/adidas_mobile@1x.jpg"
 mobile_image: "/uploads/work/adidas_desktop@1x.jpg"
 ---
 
-Identified new channels to promote the event and tell a story. Delivered a bespoke experience for flagship stores. Engaged and activated increased in-store conversion through brand ambassadors and digital marketing. Advised on wearable tech to enhance activation. Secured global rollout — including USA, Japan, Germany and the Middle East.
+When your clients' customer base is the most targeted age group on the planet, you'd better make sure you’re talking loud enough to be heard. Fortunately we have a whole host of tricks, talent and tech up our sleeves to shout the house down.
+
+**What we do:**  Experiential, Brand Activation, Sales Promotion, POS.
