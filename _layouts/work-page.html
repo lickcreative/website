@@ -6,14 +6,14 @@ layout: default
   <div class="cover" style="background-image: url('{{ page.cover_image }}');">
     {% assign contents = page.content | strip_newlines %}
     {% if contents != "" %}
-      <div class="cover__box">
+      <div class="cover__box cover__box--primary">
         <h1 class="cover__heading u-text-center">{{ page.title }}</h1>
         <div class="cover__content u-big-text">{{ content }}</div>
       </div>
     {% endif %}
   </div>
 </section>
-{% if page.work_assets %}
+<!-- {% if page.work_assets %}
 <section class="section u-vertical-space">
   <div class="grid grid--gutter u-center-block u-center-block--large">
     {% for image in page.work_assets %}
@@ -23,4 +23,4 @@ layout: default
     {% endfor %}
   </div>
 </section>
-{% endif %}
+{% endif %} -->
