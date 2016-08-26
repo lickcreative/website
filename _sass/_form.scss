@@ -1,0 +1,31 @@
+input, textarea	{
+  padding: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+  display:inline;
+  width:100%;
+  border: 1px solid $text-color;
+  font-size: 100%;
+  &:focus {
+    outline: none;
+    border-color: $brand-color;
+  }
+}
+
+input[type="submit"] {
+  height: 3.25rem;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  max-width: 8rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: $white;
+  background: $brand-color;
+  transition: background-color 0.2s ease;
+  border: none;
+  &:hover {
+    color: inherit;
+    background: none;
+    border: 1px solid $text-color;
+  }
+}

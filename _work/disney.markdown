@@ -1,18 +1,14 @@
 ---
 title: Disney
 date: 2016-07-21 13:28:00 Z
-work_assets:
-- "/uploads/become-iron-man.jpg"
-cover_video: https://www.youtube.com/embed/9gSDjL2DVDM
-layout: work-page-video
+cover_image: "/uploads/disney_cover.jpg"
 desktop_image: "/uploads/work/disney_mobile@1x.jpg"
 mobile_image: "/uploads/work/disney_desktop@1x.jpg"
+cover_video: https://www.youtube.com/embed/9gSDjL2DVDM
+layout: work-page-video
 ---
 
-## Overview
-Disney asked us to run a nationwide tour to promote the launch of Iron Man 3. The event was hosted at 6 locations around the UK, and featured a huge 103" plasma screen running a Kinect-based augmented reality experience. Players could "become Iron Man" by having his suit mapped to their bodies on-screen, allowing them to fly around Tony Stark's lab and get some target practice in.
+Our founding client, we’re very proud to still be keeping the Disney Magic alive. Helping to promote everything from little lost fish to billionaire robot superheroes, every brief holds something new. With a dedicated team around the world we’ve implemented some of the most cutting-edge, interactive movie promotions this side the known (and unknown) universe.
 
-## Results
-This campaign was more successful than we could have imagined. The microsite was overwhelmed with people wanting to sign-up and we had hour long queues of people waiting to play at every location.
-
-Disney Stores in the locations experienced sales uplift of up to 150% and the film itself broke UK box office records to become the highest-earning film of 2013.
+**What we do:** Creative strategy / campaign concepts, AV creative
+origination and artwork production, Digital technical build and Content creation, Experiential.

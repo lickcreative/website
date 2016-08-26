@@ -1,13 +1,11 @@
 ---
 title: Better
 date: 2016-07-21 13:28:00 Z
-cover_image: "/uploads/molton-brown-1280.jpg"
-work_assets:
-- "/uploads/molton-brown-box.jpg"
-- "/uploads/molton-brown-box.jpg"
-- "/uploads/molton-brown-box.jpg"
+cover_image: "/uploads/better_cover.jpg"
 desktop_image: "/uploads/gll_desktop@1x.jpg"
 mobile_image: "/uploads/gll_mobile@1x.jpg"
 ---
 
-Identified new channels to promote the event and tell a story. Delivered a bespoke experience for flagship stores. Engaged and activated increased in-store conversion through brand ambassadors and digital marketing. Advised on wearable tech to enhance activation. Secured global rollout — including USA, Japan, Germany and the Middle East.
+Trying to get Generation X off their phones and on their feet is no easy task. However, no one is better placed to get the UK’s children running,  jumping, climbing, splashing, skateboarding, ninja-ing and slam dunking.
+
+**What we do:** Brand Design, Interior Design, Digital, POS,  Shopper Insight.
