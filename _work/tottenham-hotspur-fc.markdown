@@ -1,7 +1,7 @@
 ---
 title: THFC
 date: 2016-07-20 21:30:00 Z
-cover_image: "/uploads/spurs__header.jpg"
+cover_image: "/uploads/tottenham_cover.jpg"
 desktop_image: "/uploads/work/tottenham_desktop@1x.jpg"
 mobile_image: "/uploads/work/tottenham_desktop@1x.jpg"
 ---
