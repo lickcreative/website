@@ -1,7 +1,7 @@
 ---
 title: Wilko
 date: 2016-07-21 13:28:00 Z
-cover_image: "/uploads/molton-brown-1280.jpg"
+cover_image: "/uploads/wilko_cover.jpg"
 desktop_image: "/uploads/work/wilko_mobile@1x.jpg"
 mobile_image: "/uploads/work/wilko_desktop@1x.jpg"
 ---
