@@ -1,7 +1,7 @@
 ---
 title: Form Submitted
+cover_image: "/uploads/drone-photo.jpeg"
 layout: default
-cover_image: ''
 ---
 
 <div class="cover" style="background-image: url('{{ page.cover_image }}');>
