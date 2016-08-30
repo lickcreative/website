@@ -86,7 +86,7 @@
       height: auto;
     }
     &--primary {
-      background: rgba($brand-color, 0.7);
+      background: rgba($brand-color, 0.8);
     }
     &--lab {
       -ms-flex-order: -1;
@@ -137,51 +137,3 @@
     }
   }
 }
-
-// @include mq-medium; {
-//   .cover {
-//     padding: 0;
-//     flex-direction: row;
-//     justify-content: center;
-//     -webkit-box-align: center;
-//         -ms-flex-align: center;
-//                 -ms-grid-row-align: center;
-//             align-items: center;
-//     &__nav {
-//       position: absolute;
-//       margin: 0;
-//       bottom: 50%;
-//       -webkit-transform: translateY(50%);
-//               transform: translateY(50%);
-//       &--left {
-//         left: 2rem;
-//       }
-//       &--right {
-//         right: 2rem;
-//       }
-//     }
-//     &__box {
-//       margin: 0;
-//       max-width: 50rem;
-//       height: auto;
-//       &--lab {
-//             -ms-flex-order: inherit;
-//                 order: inherit;
-//         max-width: 40rem;
-//       }
-//     }
-//     &__heading {
-//       font-size: 2rem;
-//     }
-//     &__content {
-//       padding: 2rem;
-//       font-size: 1.125rem;
-//       &--lab {
-//         padding: 0;
-//       }
-//     }
-//     &__lab-logo {
-//       width: 40rem;
-//     }
-//   }
-// }
