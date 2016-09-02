@@ -5,9 +5,9 @@
   width: 100%;
   height: 100%;
   @include flex-center;
-  background: grey; //so text is visible if image fails to load
+  background: grey; /*so text is visible if image fails to load*/
   overflow: hidden;
-  border-bottom: none; //override the standard link styling
+  border-bottom: none; /*override the standard link styling*/
   &__caption {
     font-size: calc(2rem + 1.25vw);
     font-weight: 900;
@@ -49,7 +49,7 @@
     &:hover {
       &::after {
         opacity: 0.5;
-        // background: $pink;
+        /* background: $pink;*/
       }
       & .panel__caption {
         opacity: 1;
