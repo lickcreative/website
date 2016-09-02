@@ -6,10 +6,17 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  // flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  /* flex-wrap: wrap;*/
   color: $white;
   overflow: hidden;
   background-color: hsl(220, 10, 80); /*Ensure text shows without image bg*/
@@ -18,8 +25,13 @@
   background-repeat: no-repeat;
   @include mq-medium {
     padding: 0;
-    flex-direction: row;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     -ms-grid-row-align: center;
@@ -52,8 +64,12 @@
   &__nav {
     width: 100%;
     margin-top: 2.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     @include mq-medium {
       position: absolute;
       margin: 0;
@@ -90,12 +106,14 @@
     }
     &--lab {
       -ms-flex-order: -1;
-      order: -1; /*So arrows sit under box on mobile*/
+      -webkit-box-ordinal-group: 0;
+              order: -1; /*So arrows sit under box on mobile*/
       color: $white;
       background: transparent;
       @include mq-medium {
         -ms-flex-order: inherit;
-        order: inherit;
+        -webkit-box-ordinal-group: NaN;
+                order: inherit;
         max-width: 40rem;
       }
     }

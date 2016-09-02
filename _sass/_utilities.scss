@@ -19,7 +19,8 @@
 
 .u-text-justify {
   text-align: justify;
-  text-align-last: center;
+  -moz-text-align-last: center;
+       text-align-last: center;
 }
 
 .u-vertical-space {
@@ -60,7 +61,7 @@
 }
 
 .u-big-text {
-  // font-size: 1.125rem;
+  /* font-size: 1.125rem;*/
   @media(min-width: 50em) {
     font-size: 1.333rem;
   }
@@ -77,8 +78,9 @@
     width: 100%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    // color: $white;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    /* color: $white;*/
     z-index: 100;
   }
   &:after {
