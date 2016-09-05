@@ -29,19 +29,23 @@
             transform: translate3d(0, 0, 0);
     &:nth-child(n+1) {
       -webkit-transform-origin: top right;
-              transform-origin: top right;
+              -ms-transform-origin: top right;
+          transform-origin: top right;
     }
     &:nth-child(2n+1) {
       -webkit-transform-origin: bottom right;
-              transform-origin: bottom right;
+              -ms-transform-origin: bottom right;
+          transform-origin: bottom right;
     }
     &:nth-child(3n+1) {
       -webkit-transform-origin: bottom left;
-              transform-origin: bottom left;
+              -ms-transform-origin: bottom left;
+          transform-origin: bottom left;
     }
     &:nth-child(4n+1) {
       -webkit-transform-origin: bottom left;
-              transform-origin: bottom left;
+              -ms-transform-origin: bottom left;
+          transform-origin: bottom left;
     }
   }
   &__logo {
@@ -49,7 +53,8 @@
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
     display: block;
     width: auto;
     height: auto;
