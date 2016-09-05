@@ -1,17 +1,21 @@
 .grid {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
   &--center {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center;
+    -webkit-justify-content: center;
+            justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     -ms-grid-row-align: center;
-    align-items: center;
+    -webkit-align-items: center;
+            align-items: center;
   }
   &--gutter {
     margin-left: -1rem;
@@ -21,11 +25,13 @@
     position: relative;
     -webkit-box-flex: 1;
     -ms-flex: 1 0 100%;
-    flex: 1 0 100%;
+    -webkit-flex: 1 0 100%;
+            flex: 1 0 100%;
     &--clients {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 25%;
-    flex: 0 0 25%;
+    -webkit-flex: 0 0 25%;
+            flex: 0 0 25%;
       /* min-width: 5rem;*/
       min-height: 5rem;
       width: 10vw;
@@ -34,47 +40,58 @@
       max-height: 12rem;
       display: -webkit-box;
       display: -ms-flexbox;
+      display: -webkit-flex;
       display: flex;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
-      justify-content: center;
+      -webkit-justify-content: center;
+              justify-content: center;
       -webkit-box-align: center;
       -ms-flex-align: center;
-      align-items: center;
+      -webkit-align-items: center;
+              align-items: center;
               @include mq-small {
                 -ms-flex-preferred-size: 12.5%;
-                flex-basis: 12.5%;
+                -webkit-flex-basis: 12.5%;
+                        flex-basis: 12.5%;
               }
               @include mq-medium {
                 -ms-flex-preferred-size: 10%;
-                flex-basis: 10%;
+                -webkit-flex-basis: 10%;
+                        flex-basis: 10%;
               }
     }
     &--work {
       min-height: 20rem;
       @include mq-small {
         -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
+        -webkit-flex-basis: 50%;
+                flex-basis: 50%;
       }
       @include mq-medium {
         -ms-flex-preferred-size: 33%;
-        flex-basis: 33%;
+        -webkit-flex-basis: 33%;
+                flex-basis: 33%;
       }
       @include mq-large {
         -ms-flex-preferred-size: 25%;
-        flex-basis: 25%;
+        -webkit-flex-basis: 25%;
+                flex-basis: 25%;
       }
     }
     &--half {
       margin-bottom: 2rem;
       -ms-flex-item-align: start;
-          align-self: flex-start;
+          -webkit-align-self: flex-start;
+              align-self: flex-start;
       -webkit-box-flex: 1;
       -ms-flex: 1 0 100%;
-      flex: 1 0 100%;
+      -webkit-flex: 1 0 100%;
+              flex: 1 0 100%;
       @include mq-small {
         -ms-flex-preferred-size: 50%;
-        flex-basis: 50%
+        -webkit-flex-basis: 50%;
+                flex-basis: 50%
       }
     }
     &--third {
@@ -82,7 +99,8 @@
       margin-bottom: 1rem;
       -webkit-box-flex: 1;
       -ms-flex: 1 0 32%;
-      flex: 1 0 32%;
+      -webkit-flex: 1 0 32%;
+              flex: 1 0 32%;
       min-width: 15rem;
       min-height: 15rem;
       width: 20vw;
