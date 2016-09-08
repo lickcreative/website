@@ -4,9 +4,9 @@ date: 2016-08-16 09:57:00 Z
 published: false
 position: 0
 hero_images:
-- "/uploads/hero/grass_desktop.jpg"
-- "/uploads/hero/paint_desktop.jpg"
 - "/uploads/hero/jelly_desktop.jpg"
+- "/uploads/hero/paint_desktop.jpg"
+- "/uploads/hero/grass_desktop.jpg"
 - "/uploads/hero/honey_desktop.jpg"
 ---
 

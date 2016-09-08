@@ -22,7 +22,6 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-    // padding: 0 1rem 1rem 1rem;
     font-size: ($base-font-size / $base-font-size) * 100%;
     font-family: $base-font;
     font-weight: $base-font-weight;
@@ -37,9 +36,6 @@ body {
             font-kerning: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    @media (min-width: 40em) {
-      // padding: 0 2rem 2rem 2rem;
-    }
 }
 
 p {
@@ -72,25 +68,23 @@ li {
     }
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-weight: $base-font-weight;
-}
-
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
   margin: 0;
-  font-family: 'Raleway', Helvetica, sans-serif;
-  font-weight: 400;
+  font-family: $big-font;
+  font-weight: $base-font-weight;
   line-height: 1.1;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
 h1 {
   font-size: 1.5rem;
-  @media (min-width: 50em) {
+  @include mq-medium {
     font-size: 3rem;
   }
 }
@@ -119,9 +113,7 @@ a {
 
 .section {
   position: relative; /*Ensure absolutely positioned children are relative to their section rather than the page*/
-
- /*Ensure no extra space at the bottom of the page*/
-  &:not(:last-child) {
-    // @include vertical-space;
+  &--dark {
+    background: $dark-grey;
   }
 }

@@ -80,7 +80,7 @@
     list-style-type: none;
     /* color: $text-color;*/
     font-size: 8vw;
-    font-family: 'Raleway', Helvetica, sans-serif;
+    font-family: $big-font;
     font-weight: 900;
     -webkit-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
@@ -182,13 +182,12 @@
   }
 }
 
-@media (min-width: 50em) {
+@include mq-medium {
   .header-nav {
 
   }
   .navbar {
     padding: 1rem 2rem;
-    /* max-width: 82rem;*/
     margin-left: auto;
     margin-right: auto;
     &__brand {
@@ -266,14 +265,15 @@
   }
 }
 
-@media (min-width: 70em) {
+@include mq-large {
   .navbar {
     &__title {
       display: block;
       margin-left: 1rem;
       & > h1 {
         font-size: 1rem;
-        letter-spacing: 2px;
+        font-family: $base-font;
+        font-weight: $base-font-weight;
       }
     }
   }

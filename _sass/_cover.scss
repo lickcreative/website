@@ -19,10 +19,13 @@
   /* flex-wrap: wrap;*/
   color: $white;
   overflow: hidden;
-  background-color: hsl(220, 10, 80); /*Ensure text shows without image bg*/
+  background-color: hsl(240, 10, 20); /*Ensure text shows without image bg*/
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+
   @include mq-medium {
     padding: 0;
     -webkit-box-orient: horizontal;
@@ -136,10 +139,6 @@
     padding: 1rem;
     @include mq-medium {
       padding: 3.5rem;
-      font-size: 1.125rem;
-    }
-    @include mq-large {
-      font-size: 1.25rem;
     }
     &--lab {
       padding: 0;
@@ -154,4 +153,8 @@
       width: 40rem;
     }
   }
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
 }
