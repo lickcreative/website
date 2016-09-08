@@ -5,7 +5,7 @@ published: false
 position: 4
 ---
 
-<div class="u-center-block u-center-block--medium u-center-block--outline grid grid--center u-vertical-space">
+<div class="u-center-block u-center-block--medium u-center-block--outline grid u-center-block--contact grid--center u-vertical-space">
   {% for location in site.locations %}
     <div class="grid__item grid__item--half">
       <!-- <div class="u-overlay"> -->
