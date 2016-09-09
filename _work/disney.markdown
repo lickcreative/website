@@ -2,8 +2,8 @@
 title: Disney
 date: 2016-07-21 13:28:00 Z
 cover_image: "/uploads/disney_cover.jpg"
-desktop_image: "/uploads/work/disney_mobile@1x.jpg"
-mobile_image: "/uploads/work/disney_desktop@1x.jpg"
+1x_image: "/uploads/work/disney@1x.jpg"
+2x_image: "/uploads/work/disney@2x.jpg"
 cover_video: https://www.youtube.com/embed/9gSDjL2DVDM
 layout: work-page
 ---
