@@ -14,7 +14,7 @@ $novecento-woff: "/fonts/88b94559-51df-4617-88eb-25cd415b2308.woff";
 $novecento-woff2: "/fonts/b3957850-b751-467a-9262-543000a56551.woff2";
 $base-font: "Proxima Nova W01", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 // $base-font: 'Proxima Nova W01', cursive;
-$big-font: "Novecento Sans W01", "Proxima Nova W01", "Open Sans", "Helvetica Neue" Helvetica, Arial, sans-serif;
+$big-font: "Novecento Sans W01", "Proxima Nova W01", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 // $big-font: 'Novecento Sans W01', cursive;
 $base-font-size:   1em;
 $base-font-weight: 200;
@@ -22,6 +22,7 @@ $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.3;
 
 $spacing-unit:     1rem;
+
 //Brand colours
 $white: hsl(0, 0, 100);
 $dark-grey: hsl(240, 5, 25);
@@ -33,9 +34,6 @@ $orange: #ef7f31;
 $text-color:  $dark-grey;
 $bg-color:    $white;
 $brand-color: $pink;
-
-// Width of the content area
-// $content-width: 80rem;
 
 //Vertical spacing
 $vs-rem: 4rem;
