@@ -14,11 +14,11 @@ The HTML is structured to be as modular as possible. Pages are [markdown] files,
 
 There are Collections for each section on the homepage (`_home-sections`), each client shown in the Clients section (`_clients`), each piece of work shown in the Work section (`_work`), each location in the Contact section (`_locations`) and each of the Lab pages (`_lab`). Siteleaf also creates an '_uploads' Collection to manage user-uploaded images.
 
-## Home Sections
+## Homepage Sections
 
 ### Overview
 
-The homepage is `index.md`, and all it does is sort the sections in the `_home-sections` Collection according to the `position` value in their frontmatter and output them in turn. The positions variable is set by Siteleaf when a user drag-and-drops the sections to re-order them. The actual HTML for each section is within each separate file in `_home-sections`. These are markdown files for ease of editing within Siteleaf (even though some use only HTML).
+The homepage is `index.md`, and all the file does is sort the sections in the `_home-sections` Collection according to the `position` value in their frontmatter and output them in turn. The positions variable is set by Siteleaf when a user drag-and-drops the sections to re-order them. The actual HTML for each section is within each separate file in `_home-sections`. These are markdown files for ease of editing within Siteleaf (even though some use only HTML).
 
 ### Hero
 
@@ -39,6 +39,22 @@ This section loops over all entries in the `_work` Collection and outputs them i
 ### Contact
 
 This section loops over each location in `_locations` and outputs them in a grid with the address and phone number provided in the frontmatter of each.
+
+## Lab
+
+The `_lab` Collection holds each of the pages concerning the Lab. These act as almost a microsite linked from the homepage (although the layout it very similar to the Work pages).
+
+`_lab/index.md` is the first page (at the URL /lab), and the others follow. The order is established by a `position` frontmatter value, as with the home sections. The complex looking Liquid tags in the Lab layouts generate the correct arrow links that navigate to the previous/next page based on the `position` value.
+
+## Layouts
+
+### Work Pages
+
+`work-page.html` is the layout for all the Work pages. It will take the `cover_image` frontmatter value and use it as the full viewport cover image. It displays the content text in a box over the image and will show a grid of work images underneath (if these images exist in the frontmatter).
+
+### Lab Pages
+
+`lab-cover.html` and `lab-tech.html` are very similar to the work page layout. The only difference is the previous/next navigation arrows.
 
 [Jekyll]: https://jekyllrb.com/
 [Github Pages]: https://pages.github.com/
