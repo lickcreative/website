@@ -7,3 +7,4 @@ logo_image: uploads/lab/lab-logo.svg
 cover_image: "/uploads/lab/lab_desktop.jpg"
 layout: lab-cover
 ---
+
