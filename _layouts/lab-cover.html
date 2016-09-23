@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<section class="section u-vertical-space--small">
+  <div class="cover cover--lab" style="background-image: url('{{ page.cover_image }}');">
+    {% if page.logo_image %}
+      <div class="cover__box cover__box--lab">
+        <img class="cover__lab-logo" src="/uploads/lab/lab-logo.svg" alt="Lab logo">
+      </div>
+    {% endif %}
+    {% assign contents = page.content | strip_newlines %}
+    {% if contents != "" %}
+      <div class="cover__box cover__box--lab">
+        {% if page.has_title %}
+          <h1 class="cover__heading cover__heading--lab u-text-center">{{ page.title }}</h1>
+        {% endif %}
+        <div class="cover__content cover__content--lab u-text-size--mid u-text-justify">{{ content }}</div>
+      </div>
+    {% endif %}
+    {% include lab-nav.html %}
+  </div>
+</section>
+{% if page.images %}
+<section class="section u-vertical-space--small">
+  <div class="u-center-block u-center-block--large">
+    <div class="grid grid--gutter">
+      {% for image in page.images %}
+      <div class="grid__item grid__item--third">
+        <img class="u-object-fit" src="{{ image }}">
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}

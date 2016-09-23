@@ -1,109 +1,116 @@
 .hero {
-  position: relative;
-  width: 100%;
-  height: 600px;
-  height: 65vh;
-  overflow: hidden;
-  &::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: hsla(0, 0, 0, 0.1);
-    z-index: 50;
-  }
-  &__image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    height: auto;
-    -o-object-fit: cover;
-       object-fit: cover;
-    opacity: 0;
-    will-change: transform;
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-    &:nth-child(n+1) {
-      -webkit-transform-origin: top right;
-              -ms-transform-origin: top right;
-          transform-origin: top right;
-    }
-    &:nth-child(2n+1) {
-      -webkit-transform-origin: bottom right;
-              -ms-transform-origin: bottom right;
-          transform-origin: bottom right;
-    }
-    &:nth-child(3n+1) {
-      -webkit-transform-origin: bottom left;
-              -ms-transform-origin: bottom left;
-          transform-origin: bottom left;
-    }
-    &:nth-child(4n+1) {
-      -webkit-transform-origin: bottom left;
-              -ms-transform-origin: bottom left;
-          transform-origin: bottom left;
-    }
-  }
-  &__logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-    display: block;
-    width: auto;
-    height: auto;
-    max-height: 90%;
-    max-width: 90%;
-    z-index: 100;
-  }
-}
+    background: -webkit-linear-gradient(right top, hsla(49, 100%, 50%, 0) 0%, hsl(47, 100%, 50%) 100%),-webkit-linear-gradient(left top, hsla(358, 100%, 23%, 0) 0%, hsl(302, 100%, 23%) 100%),-webkit-linear-gradient(right bottom, hsla(203, 20%, 60%, 0) 0%, hsl(296, 63%, 48%) 100%),-webkit-linear-gradient(left bottom, hsla(337, 70%, 47%, 0) 0%, hsl(0, 70%, 47%) 100%);
 
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: hsla(0, 0, 0, 0.1);
+        z-index: 50;
+    }
+
+    &__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 100%;
+        height: auto;
+        -o-object-fit: cover;
+        object-fit: cover;
+        opacity: 0;
+        will-change: transform;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+
+        &:nth-child(n+1) {
+            -webkit-transform-origin: top right;
+            -ms-transform-origin: top right;
+            transform-origin: top right;
+        }
+
+        &:nth-child(2n+1) {
+            -webkit-transform-origin: bottom right;
+            -ms-transform-origin: bottom right;
+            transform-origin: bottom right;
+        }
+
+        &:nth-child(3n+1) {
+            -webkit-transform-origin: bottom left;
+            -ms-transform-origin: bottom left;
+            transform-origin: bottom left;
+        }
+
+        &:nth-child(4n+1) {
+            -webkit-transform-origin: bottom left;
+            -ms-transform-origin: bottom left;
+            transform-origin: bottom left;
+        }
+    }
+
+    &__logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        display: block;
+        width: auto;
+        height: auto;
+        max-height: 90%;
+        max-width: 90%;
+        z-index: 100;
+    }
+}
 /**
  * Because of the stacking context, we need to make sure that the first image (in source) is not hidden by the last one.
  * The rule below moves all images past the second one down the stack.
  * This is because the second image needs to show on top of the first one when it transitions in.
  **/
 .js-animating:first-child + img ~ img {
-  z-index: -1;
+    z-index: -1;
 }
-
 /**
  * Because images are styled with a different point of origin, the following rule will create different panning effects.
  */
-
 .js-animating {
-  /* opacity: 1;*/
-  /* transform: scale(1.2);*/
+    /* opacity: 1;*/
+    /* transform: scale(1.2);*/
     -webkit-animation: fade 2s forwards, zoom 15s linear forwards;
-            animation: fade 2s forwards, zoom 15s linear forwards;
+    animation: fade 2s forwards, zoom 15s linear forwards;
 }
-
 @media (min-width: 40em) {
-  .hero {
-    &__logo {
-      max-width: 55rem;
+    .hero {
+        &__logo {
+            max-width: 55rem;
+        }
     }
-  }
 }
-
 @-webkit-keyframes fade {
-  100% { opacity: 1; }
+    100% {
+        opacity: 1;
+    }
 }
-
 @keyframes fade {
-  100% { opacity: 1; }
+    100% {
+        opacity: 1;
+    }
 }
-
 @-webkit-keyframes zoom {
-  100% { -webkit-transform: scale(1.2); transform: scale(1.2); }
+    100% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
 }
-
 @keyframes zoom {
-  100% { -webkit-transform: scale(1.2); transform: scale(1.2); }
+    100% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
 }
+// Drawing the Lick logo code (long so imported separately)
+@import "svg-animation";

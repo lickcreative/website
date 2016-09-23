@@ -1,8 +1,8 @@
 ---
 title: Burger King
 date: 2016-07-21 13:28:00 Z
-cover_image: "/uploads/burger-king_cover.jpg"
-1x_image: "/uploads/work/burger@1x.jpg"
+cover-image: "/uploads/work/burger-king-cover.jpg"
+image: "/uploads/work/burger@1x.jpg"
 2x_image: "/uploads/work/burger@2x.jpg"
 ---
 

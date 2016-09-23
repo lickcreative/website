@@ -4,11 +4,11 @@ date: 2016-07-04 21:02:00 Z
 position: 2
 has_title: true
 cover_image: "/uploads/lab/lab2_desktop.jpg"
-work_assets:
+images:
 - "/img/hologram.jpg"
 - "/img/hologram.jpg"
 - "/img/hologram.jpg"
-layout: lab_cover
+layout: lab-cover
 ---
 
 Clients can measure the number of people who walk past the store, the number who come through the front door — and this information includes whether or not they went in immediately or were convinced by the shopfront.

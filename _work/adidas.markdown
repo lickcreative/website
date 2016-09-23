@@ -1,8 +1,8 @@
 ---
 title: Adidas
 date: 2016-07-21 13:28:00 Z
-cover_image: "/uploads/adidas_cover.jpg"
-1x_image: "/uploads/work/adidas@1x.jpg"
+cover-image: "/uploads/work/adidas-cover.jpg"
+image: "/uploads/work/adidas@1x.jpg"
 2x_image: "/uploads/work/adidas@2x.jpg"
 ---
 

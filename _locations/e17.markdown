@@ -1,11 +1,11 @@
 ---
-title: Walthamstow Office
-image: "/uploads/city.jpg"
+title: London
+image-1x: "/img/locations/map_e17@1x.png"
+image-2x: "/img/locations/map_e17@2x.png"
 address:
 - 153-157 Blackhorse Lane
 - Walthamstow
-- London
 - E17 5QZ
-phone: "+44-208-498-4400"
+phone: "+44 208 498 4400"
+map_url: http://www.google.com/maps/place/E17+5QZ/
 ---
-

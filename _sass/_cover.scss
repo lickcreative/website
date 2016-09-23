@@ -3,48 +3,19 @@
   padding: 1rem;
   min-height: 600px;
   min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  /* flex-wrap: wrap;*/
+  @include flex-center;
+  flex-direction: column;
   color: $white;
   overflow: hidden;
   background-color: hsl(240, 10, 20); /*Ensure text shows without image bg*/
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  // opacity: 0;
-  // animation: fadeIn 1s ease-in forwards;
-
   @include mq-medium {
     padding: 0;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -ms-grid-row-align: center;
-    align-items: center;
+    flex-direction: row;
   }
   &--lab {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-                -ms-grid-row-align: center;
-            align-items: center;
     & > * {
       z-index: 50;
     }
@@ -58,11 +29,6 @@
       background: hsla(240, 100, 10, 0.2);
       z-index: 0;
     }
-  }
-  &-video {
-    width: 100%;
-    height: 52vw; /* 16:9 ratio of width to height at 1280px wide*/
-    max-height: 720px; /* Stop it growing taller once width hits max*/
   }
   &__nav {
     width: 100%;
@@ -108,15 +74,9 @@
       background: rgba($brand-color, 0.8);
     }
     &--lab {
-      -ms-flex-order: -1;
-      -webkit-box-ordinal-group: 0;
-              order: -1; /*So arrows sit under box on mobile*/
       color: $white;
       background: transparent;
       @include mq-medium {
-        -ms-flex-order: inherit;
-        -webkit-box-ordinal-group: NaN;
-                order: inherit;
         max-width: 40rem;
       }
     }
@@ -125,7 +85,6 @@
     padding: 1rem;
     border-bottom: 1px solid;
     font-size: 1.125rem;
-    font-weight: 900;
     @include mq-medium {
       font-size: 3rem;
     }
@@ -150,7 +109,7 @@
   &__lab-logo {
     width: 100%;
     @include mq-medium {
-      width: 40rem;
+      max-width: 40rem;
     }
   }
 }

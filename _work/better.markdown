@@ -1,8 +1,8 @@
 ---
 title: Better
 date: 2016-07-21 13:28:00 Z
-cover_image: "/uploads/better_cover.jpg"
-1x_image: "/uploads/work/gll@1x.jpg"
+cover-image: "/uploads/work/better-cover.jpg"
+image: "/uploads/work/gll@1x.jpg"
 2x_image: "/uploads/work/gll@1x.jpg"
 ---
 
