@@ -1,8 +1,8 @@
 ---
 title: Wilko
 date: 2016-07-21 13:28:00 Z
-cover_image: "/uploads/wilko_cover.jpg"
-1x_image: "/uploads/work/wilko@1x.jpg"
+cover-image: "/uploads/work/wilko-cover.jpg"
+image: "/uploads/work/wilko@1x.jpg"
 2x_image: "/uploads/work/wilko@2x.jpg"
 ---
 

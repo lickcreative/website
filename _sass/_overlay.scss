@@ -1,0 +1,55 @@
+.overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  @include flex-center;
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+  &__image {
+    position: relative;
+    width: 100%;
+  }
+  &__text {
+    padding: 2rem;
+    width: 100%;
+    line-height: 1;
+    // font-family: $big-font;
+    // font-size: calc(1rem + 1vw);
+    // font-weight: 500;
+    z-index: 100;
+    @include mq-medium {
+      opacity: 0.9;
+      transition: transform 0.2s ease-out, opacity;
+      // will-change: transform, opacity;
+    }
+    &--work {
+      font-family: $big-font;
+      font-size: calc(1.5rem + 1vw);
+      text-transform: uppercase;
+    }
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: adjust-color($brand-color, $saturation: -50%, $lightness: -25%);
+    opacity: 0.1;
+    transition: opacity 0.2s ease-out;
+    will-change: opacity;
+  }
+  @include mq-medium {
+    &:hover {
+      & .overlay__text {
+        transform: scale(1.1);
+        opacity: 1;
+      }
+      &:after {
+        opacity: 0.4;
+      }
+    }
+  }
+}

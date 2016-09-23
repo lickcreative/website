@@ -16,35 +16,50 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
-@keyframes fadeIn {
-  to { opacity: 1; }
+/* Reset form elements */
+
+textarea, input, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+textarea {
+  resize: none;
+  overflow: auto;
 }
 
 /**
  * Basic styling
  */
 body {
-    font-size: ($base-font-size / $base-font-size) * 100%;
-    font-family: $base-font;
-    font-weight: $base-font-weight;
-    line-height: $base-line-height;
-    color: $text-color;
-    background-color: $bg-color;
-    -webkit-text-size-adjust: 100%;
-    -webkit-font-feature-settings: "kern" 1;
-    -o-font-feature-settings: "kern" 1;
-    font-feature-settings: "kern" 1;
-    -webkit-font-kerning: normal;
-            font-kerning: normal;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    opacity: 0;
-    animation: fadeIn 1s ease-in forwards;
+  font-size: ($base-font-size / $base-font-size) * 100%;
+  font-family: $base-font;
+  font-weight: $base-font-weight;
+  line-height: $base-line-height;
+  color: $text-color;
+  background-color: $bg-color;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  -webkit-font-kerning: normal;
+          font-kerning: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-animation: fadeIn 1s ease-in forwards;
+          animation: fadeIn 1s ease-in forwards;
+  @include mq-medium {
+    font-size: ($base-font-size / $base-font-size) * 137.5%;
+  }
 }
 
 p {
-  // text-align: justify;
-  // text-align-last: center;
+  /* text-align: justify;*/
+  /* text-align-last: center;*/
   &:not(:last-child) {
     margin: 0;
     margin-bottom: 1rem;
@@ -83,7 +98,7 @@ h6 {
   font-weight: $base-font-weight;
   line-height: 1.1;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  // letter-spacing: 2px;
 }
 
 h1 {
@@ -103,7 +118,6 @@ strong {
 
 address {
   font-style: normal;
-  line-height: 1.4;
 }
 
 a {
@@ -120,4 +134,8 @@ a {
   &--dark {
     background: $dark-grey;
   }
+}
+
+.footer {
+  margin-bottom: 1rem;
 }

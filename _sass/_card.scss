@@ -1,0 +1,30 @@
+.card {
+  max-width: 100%;
+  height: 100%;
+  border: 1px solid;
+  // border-radius: 1px;
+  &__image {
+    max-height: 100%;
+    overflow: hidden;
+    & > img {
+      transition: transform 0.2s ease-in-out;
+      will-change: transform;
+    }
+  }
+  &__body {
+    padding: 1rem;
+    line-height: 1.2;
+    text-align: center;
+  }
+  &__heading {
+    font-size: 1.25em;
+    margin-bottom: 0.25em;
+  }
+}
+
+@media (min-width: 30em) {
+  .card__link:hover .card__image > img,
+  .card__link:focus .card__image > img{
+    transform: scale(1.5);
+  }
+}

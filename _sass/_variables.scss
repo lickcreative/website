@@ -1,0 +1,40 @@
+
+// Fonts
+$proxima-nova-woff: "/fonts/2fa30669-9bbd-4ced-912f-db94a367ed6c.woff";
+$proxima-nova-woff2: "/fonts/d9fe41ee-4904-4a11-ba11-b61cd3be767f.woff2";
+$proxima-nova--italic-woff: "/fonts/0c4be1a2-8e16-48b4-a384-165fa5baffe3.woff";
+$proxima-nova--italic-woff2: "/fonts/b47d2733-d2e6-452a-9134-77bcf65f9e7e.woff2";
+$proxima-nova--bold-woff: "/fonts/cb9d4f02-d326-46b0-a857-930cce057f80.woff";
+$proxima-nova--bold-woff2: "/fonts/e898042a-5eb9-4810-b578-c3993ab58f0f.woff2";
+$novecento-woff: "/fonts/88b94559-51df-4617-88eb-25cd415b2308.woff";
+$novecento-woff2: "/fonts/b3957850-b751-467a-9262-543000a56551.woff2";
+$base-font: "Proxima Nova W01", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+// $base-font: 'Proxima Nova W01', cursive;
+$big-font: "Novecento Sans W01", "Proxima Nova W01", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+// $big-font: 'Novecento Sans W01', cursive;
+$base-font-size:   1em;
+$base-font-weight: 200;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.3;
+
+$spacing-unit:     1rem;
+
+//Brand colours
+$white: hsl(0, 0, 100);
+$dark-grey: hsl(240, 5, 25);
+$pink: hsl(328, 100%, 45%);
+
+
+$text-color:  $dark-grey;
+$bg-color:    $white;
+$brand-color: $pink;
+
+//Vertical spacing
+$vs-rem: 4rem;
+$vs-vw: calc(1rem + 4vw);
+$vs-rem--lg: 6rem;
+$vs-vw--lg: calc(1rem + 6vw);
+
+$small-width: 40em;
+$medium-width: 50em;
+$large-width: 70em;

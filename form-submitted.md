@@ -6,7 +6,7 @@ layout: default
 
 <div class="cover" style="background-image: url('{{ page.cover_image }}');">
   <div class="cover__box cover__box--primary">
-    <div class="cover__content u-big-text">
+    <div class="cover__content u-text-size--mid">
       <p>Thanks tor getting in touch! We'll get back to you as soon as possible.</p>
     </div>
   </div>

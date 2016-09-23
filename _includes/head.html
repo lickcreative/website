@@ -26,5 +26,14 @@
   <meta name="format-detection" content="telephone=no">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <style>
+    {% capture criticalcss %}
+      {% include _critical.scss %}
+    {% endcapture %}
+    {{ criticalcss | scssify }}
+  </style>
+  <link rel="preload" href="{{ "/css/main.css" | prepend: site.baseurl }}" as="style" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}"></noscript>
+
+  {% seo %}
 </head>

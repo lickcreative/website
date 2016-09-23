@@ -40,3 +40,13 @@
     margin-bottom: $vs-vw--lg;
   }
 }
+
+@mixin vertical-space--small {
+  margin-bottom: ($vs-rem / 2);
+  margin-bottom: ($vs-vw / 2);
+
+  @media (min-width: 50em) {
+    margin-bottom: ($vs-rem--lg / 2);
+    margin-bottom: ($vs-vw--lg / 2);
+  }
+}

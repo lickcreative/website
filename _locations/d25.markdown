@@ -1,11 +1,12 @@
 ---
-title: Waltham Cross Office
-image: "/uploads/d25_desktop@1x.jpg"
+title: Waltham Cross
+image-1x: "/img/locations/map_d25@1x.png"
+image-2x: "/img/locations/map_d25@2x.png"
 address:
 - Unit 25 The I/O Centre
 - Lea Road
-- Waltham Cross
 - EN9 1AS
-phone: "+44-208-498-4400"
+phone: "+44 208 498 4400"
+map_url: https://goo.gl/maps/dJamgrXQXdM2
 ---
 

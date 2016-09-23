@@ -1,8 +1,8 @@
 ---
 title: Molton Brown
 date: 2016-07-21 13:28:00 Z
-cover_image: "/uploads/molton-brown_cover-0ea6dd.jpg"
-1x_image: "/uploads/work/molton@1x.jpg"
+cover-image: "/uploads/work/molton-brown-cover.jpg"
+image: "/uploads/work/molton@1x.jpg"
 2x_image: "/uploads/work/molton@2x.jpg"
 ---
 
