@@ -28,14 +28,17 @@
       max-width: 12rem;
       max-height: 12rem;
       @include flex-center;
-        @include mq-small {
-          -ms-flex-preferred-size: 12.5%;
-                  flex-basis: 12.5%;
-        }
-        @include mq-medium {
-          -ms-flex-preferred-size: 10%;
-                  flex-basis: 10%;
-        }
+      @include mq-small {
+        -ms-flex-preferred-size: 12.5%;
+                flex-basis: 12.5%;
+      }
+      @include mq-medium {
+        -ms-flex-preferred-size: 10%;
+                flex-basis: 10%;
+      }
+      & > a {
+        width: 100%; //Weird old Chrome fix to ensure icon links fill their container
+      }
     }
     &--work {
       height: 20rem;
