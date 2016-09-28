@@ -1,15 +1,5 @@
 ---
 title: Lick Creative
-email: oliver.phillips@lickcreative.com
-description: |
-  Lick are a creative agency based in London.
-logo: '/img/lick-logo.png'
-baseurl:
-url: http://www.lickcreative.com
-twitter:
-  username: wearelick
-# Enter your Google Analytics web tracking code (e.g. UA-24138326-1) to activate tracking
-google_analytics: UA-24138326-1
 timezone: UTC
 repository: lickcreative/website
 collections:
@@ -29,6 +19,9 @@ collections:
   posts:
     title: Posts
     output: true
+  social:
+    title: Social
+    output: false
   uploads:
     title: Uploads
     output: true
@@ -36,16 +29,13 @@ collections:
     title: Work
     output: true
     permalink: "/work/:path/"
-  social:
-    title: Social
-    output: false
 defaults:
 - scope:
     path: ''
     type: work
   values:
     layout: work-cover
-    cover_image:
+    cover_image: 
     work_assets:
     - ''
     - ''
@@ -70,9 +60,19 @@ defaults:
     is shown: false
     image: ''
     url: ''
+email: oliver.phillips@lickcreative.com
+description: 'Lick are a creative agency based in London.
+
+'
+logo: "/img/lick-logo.png"
+baseurl: 
+url: http://www.lickcreative.com
+twitter:
+  username: wearelick
+google_analytics: UA-24138326-1
 markdown: kramdown
 sass:
   style: compressed
 gems:
-  - jekyll-sitemap
-  - jekyll-seo-tag
+- jekyll-sitemap
+- jekyll-seo-tag

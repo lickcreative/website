@@ -2,8 +2,8 @@
 title: Contact
 date: 2016-08-17 10:36:00 Z
 published: false
-email: contact@lickcreative.com
 position: 4
+email: contact@lickcreative.com
 ---
 
 <div class="u-center-block u-center-block--medium u-vertical-space">
