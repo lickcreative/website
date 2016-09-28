@@ -59,6 +59,7 @@ defaults:
     is shown: false
     image: ''
     url: ''
+repository: lickcreative/website
 email: oliver.phillips@lickcreative.com
 description: 'Lick are a creative agency based in London.
 

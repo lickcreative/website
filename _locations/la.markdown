@@ -1,5 +1,6 @@
 ---
 title: LA
+position: 6
 image-1x: "/img/locations/map_la@1x.png"
 image-2x: "/img/locations/map_la@2x.png"
 address:

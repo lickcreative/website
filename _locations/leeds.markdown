@@ -1,5 +1,6 @@
 ---
 title: Leeds
+position: 4
 image-1x: "/img/locations/map_leeds@1x.png"
 image-2x: "/img/locations/map_leeds@2x.png"
 address:

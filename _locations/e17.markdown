@@ -1,5 +1,6 @@
 ---
 title: London
+position: 1
 image-1x: "/img/locations/map_e17@1x.png"
 image-2x: "/img/locations/map_e17@2x.png"
 address:

@@ -14,14 +14,13 @@
     padding: 2rem;
     width: 100%;
     line-height: 1;
-    // font-family: $big-font;
-    // font-size: calc(1rem + 1vw);
-    // font-weight: 500;
     z-index: 100;
     @include mq-medium {
       opacity: 0.9;
+      -webkit-transition: opacity, -webkit-transform 0.2s ease-out;
+      transition: opacity, -webkit-transform 0.2s ease-out;
       transition: transform 0.2s ease-out, opacity;
-      // will-change: transform, opacity;
+      will-change: transform, opacity;
     }
     &--work {
       font-family: $big-font;
@@ -38,13 +37,16 @@
     height: 100%;
     background: adjust-color($brand-color, $saturation: -50%, $lightness: -25%);
     opacity: 0.1;
+    -webkit-transition: opacity 0.2s ease-out;
     transition: opacity 0.2s ease-out;
     will-change: opacity;
   }
   @include mq-medium {
     &:hover {
       & .overlay__text {
-        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+                transform: scale(1.1);
         opacity: 1;
       }
       &:after {

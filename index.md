@@ -1,6 +1,7 @@
 ---
 title: Home
 layout: default
+image: "/img/lick-logo.png"
 ---
 
 {% assign sections = site.home-sections | sort:"position" %}

@@ -1,5 +1,6 @@
 ---
 title: Waltham Cross
+position: 2
 image-1x: "/img/locations/map_d25@1x.png"
 image-2x: "/img/locations/map_d25@2x.png"
 address:

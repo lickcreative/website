@@ -6,9 +6,10 @@ position: 4
 email: contact@lickcreative.com
 ---
 
-<div class="u-center-block u-center-block--large u-vertical-space">
+<div class="u-center-block u-center-block--medium u-vertical-space">
   <div class="grid grid--gutter grid--center ">
-    {% for location in site.locations %}
+    {% assign locations = site.locations | sort:"position" %}
+    {% for location in locations %}
       <div class="grid__item grid__item--contact grid__item--gutter">
         <div class="card">
           <a href="{{ location.map_url }}" class="no-link-styles card__link">
