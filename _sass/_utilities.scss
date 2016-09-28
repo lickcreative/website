@@ -42,15 +42,19 @@
 .u-center-block {
   margin-left: 1rem;
   margin-right: 1rem;
-  @include mq-small {
-    margin-left: auto;
-    margin-right: auto;
-  }
   &--small {
     max-width: 44rem;
+    @include mq-medium {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   &--medium {
     max-width: 64rem;
+    @include mq-large {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   &--large {
     max-width: 105rem;
