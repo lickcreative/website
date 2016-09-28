@@ -11,6 +11,7 @@ twitter:
 # Enter your Google Analytics web tracking code (e.g. UA-24138326-1) to activate tracking
 google_analytics: UA-24138326-1
 timezone: UTC
+repository: lickcreative/website
 collections:
   clients:
     title: Clients
