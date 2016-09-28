@@ -1,5 +1,6 @@
 ---
 title: Waltham Cross
+position: 2
 image-1x: "/img/locations/map_d25@1x.png"
 image-2x: "/img/locations/map_d25@2x.png"
 address:
@@ -8,6 +9,5 @@ address:
 - EN9 1AS
 phone: "+44 208 498 4400"
 map_url: https://goo.gl/maps/dJamgrXQXdM2
-position: 2
 ---
 

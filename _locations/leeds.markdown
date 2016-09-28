@@ -1,5 +1,6 @@
 ---
 title: Leeds
+position: 4
 image-1x: "/img/locations/map_leeds@1x.png"
 image-2x: "/img/locations/map_leeds@2x.png"
 address:
@@ -8,6 +9,5 @@ address:
 - LS11 5QA
 phone: "+44 113 394 4900"
 map_url: https://www.google.com/maps/place/LS11+5QA
-position: 4
 ---
 

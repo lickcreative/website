@@ -1,7 +1,6 @@
 ---
 title: Lick Creative
 timezone: UTC
-repository: lickcreative/website
 collections:
   clients:
     title: Clients
@@ -60,6 +59,7 @@ defaults:
     is shown: false
     image: ''
     url: ''
+repository: lickcreative/website
 email: oliver.phillips@lickcreative.com
 description: 'Lick are a creative agency based in London.
 
