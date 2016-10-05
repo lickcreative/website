@@ -12,6 +12,9 @@ collections:
     title: Lab
     output: true
     permalink: "/retail-lab/:path"
+  lab-products:
+    title: Lab Products
+    output: false
   locations:
     title: Locations
     output: false
@@ -54,13 +57,18 @@ defaults:
     - ''
 - scope:
     path: ''
+    type: lab-products
+  values:
+    image: "/img/hologram.jpg"
+- scope:
+    path: ''
     type: social
   values:
     is shown: false
     image: ''
     url: ''
 repository: lickcreative/website
-email: oliver.phillips@lickcreative.com
+email: contact@lickcreative.com
 description: 'Lick are a creative agency based in London.
 
 '

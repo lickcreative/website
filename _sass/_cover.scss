@@ -62,7 +62,7 @@
     }
   }
   &__box {
-    margin-top: 2.5rem;
+    width: 100%;
     background: hsla(0, 0, 0, 0.75);
     z-index: 10;
     @include mq-medium {
@@ -76,8 +76,8 @@
     &--lab {
       color: $white;
       background: transparent;
-      @include mq-medium {
-        max-width: 40rem;
+      @include mq-small {
+        max-width: 35rem;
       }
     }
   }

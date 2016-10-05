@@ -53,7 +53,7 @@ body {
   -webkit-animation: fadeIn 1s ease-in forwards;
           animation: fadeIn 1s ease-in forwards;
   @include mq-medium {
-    font-size: ($base-font-size / $base-font-size) * 137.5%;
+    font-size: ($base-font-size / $base-font-size) * 125%;
   }
 }
 

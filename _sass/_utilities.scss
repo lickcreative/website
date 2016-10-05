@@ -1,26 +1,9 @@
-.u-object-fit {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-  width: auto;
-  height: 100%;
-  min-width: 100%;
-  max-width: 150%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .u-text-center {
     text-align: center;
 }
 
 .u-text-justify {
   text-align: justify;
-  -moz-text-align-last: center;
-       text-align-last: center;
 }
 
 .u-text-invert {
@@ -43,14 +26,17 @@
   margin-left: 1rem;
   margin-right: 1rem;
   &--small {
-    max-width: 44rem;
-    @include mq-medium {
+    max-width: 38rem;
+    @include mq-small {
       margin-left: auto;
       margin-right: auto;
     }
+    @include mq-medium {
+      max-width: 44rem;
+    }
   }
   &--medium {
-    max-width: 64rem;
+    max-width: 72rem;
     @include mq-large {
       margin-left: auto;
       margin-right: auto;
@@ -62,9 +48,13 @@
       padding-left: 2rem;
       padding-right: 2rem;
     }
+    @include mq-large {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   &--outline {
-    padding: 1rem;
+    padding: 2rem;
     border: 1px solid;
     @include mq-medium {
       padding: 2rem;
@@ -75,23 +65,20 @@
   }
 }
 
-/* .u-text-size {*/
-/*   // &--mid {*/
-/*   // @include mq-medium {*/
-/*   //   font-size: 1.333rem;*/
-/*   // }*/
-/* // }*/
-/*   // &--large {*/
-/*   //   font-size: calc(1.5rem + 1vw);*/
-/*   // }*/
-/* }*/
-
 .u-icon {
-  width: 70%;
+  width: 80%;
   height: auto;
   max-height: 100%;
   &--grey {
     -webkit-filter: grayscale(100%);
             filter: grayscale(100%);
   }
+}
+
+.u-16-9 {
+  @include aspect-ratio(16, 9);
+}
+
+.u-square {
+  @include aspect-ratio(1, 1);
 }

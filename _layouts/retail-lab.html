@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<section class="section u-vertical-space">
+  <div class="cover cover--lab" style="background-image: url('{{ page.cover_image }}');">
+    {% if page.logo_image %}
+      <div class="cover__box cover__box--lab">
+        <img class="cover__lab-logo" src="/uploads/lab/lab-logo.svg" alt="Lab logo">
+      </div>
+    {% endif %}
+  </div>
+</section>
+<section class="section u-vertical-space">
+  <div class="u-center-block u-center-block--small u-center-block--outline u-text-justify">
+    {{ content }}
+  </div>
+</section>
+<section class="section u-vertical-space">
+  <div class="u-center-block u-center-block--large">
+    <div class="grid grid--gutter grid--center">
+      {% assign products = site.lab-products | sort:"position" %}
+      {% for product in products %}
+      <div class="grid__item grid__item--half grid__item--gutter">
+        <figure class="card card--outline">
+          <div class="card__img-container u-16-9">
+            <img src="{{ product.image }}" alt="{{ product.title }}" class="card__image">
+          </div>
+          <figcaption class="card__body u-text-justify">
+            <h2 class="card__heading u-text-center">{{ product.title }}</h2>
+            <p>{{ product.content }}</p>
+          </figcaption>
+        </figure>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

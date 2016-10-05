@@ -9,9 +9,15 @@
     -ms-flex-pack: center;
             justify-content: center;
   }
+  $gutter-small: 1rem;
+  $gutter-large: 2rem;
   &--gutter {
-    margin-left: -1rem;
-    margin-bottom: -1rem;
+    margin-left: ($gutter-small * -1);
+    margin-bottom: ($gutter-small * -1);
+    @include mq-medium {
+      margin-left: ($gutter-large * -1);
+      margin-bottom: ($gutter-large * -1);
+    }
   }
   &__item {
     position: relative;
@@ -37,7 +43,7 @@
                 flex-basis: 10%;
       }
       & > a {
-        width: 100%; //Weird old Chrome fix to ensure icon links fill their container
+        width: 100%; /*Weird old Chrome fix to ensure icon links fill their container*/
       }
     }
     &--work {
@@ -63,33 +69,57 @@
       }
     }
     &--contact {
-      -webkit-box-flex: 1;
-          -ms-flex: 1 0 100%;
-              flex: 1 0 100%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 100%;
+              flex: 0 0 100%;
       @include mq-small {
-        -ms-flex-preferred-size: calc(50% - 1rem);
-                flex-basis: calc(50% - 1rem);
+        -ms-flex-preferred-size: 50%;
+                flex-basis: 50%;
       }
       @include mq-large {
-        -ms-flex-preferred-size: calc(33% - 1rem);
-                flex-basis: calc(33% - 1rem);
+        -ms-flex-preferred-size: 33%;
+                flex-basis: 33%;
+      }
+    }
+    &--quarter {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 100%;
+              flex: 0 0 100%;
+      @include mq-small {
+        -ms-flex-preferred-size: 50%;
+                flex-basis: 50%;
+      }
+      @include mq-medium {
+        -ms-flex-preferred-size: 33%;
+                flex-basis: 33%;
+      }
+      @include mq-large {
+        -ms-flex-preferred-size: 25%;
+                flex-basis: 25%;
+      }
+    }
+    &--half {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 100%;
+              flex: 0 0 100%;
+      @include mq-small {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 50%;
+                flex: 0 0 50%;
+      }
+      @include mq-large {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 33%;
+                flex: 0 0 33%;
       }
     }
     &--gutter {
-        padding-left: 1rem;
-        padding-bottom: 1rem;
-    }
-    &--third {
-      margin-left: 1rem;
-      margin-bottom: 1rem;
-      -webkit-box-flex: 1;
-      -ms-flex: 1 0 32%;
-              flex: 1 0 32%;
-      min-width: 15rem;
-      min-height: 15rem;
-      width: 20vw;
-      height: 20vw;
-      overflow: hidden;
+        padding-left: $gutter-small;
+        padding-bottom: $gutter-small;
+        @include mq-medium {
+          padding-left: $gutter-large;
+          padding-bottom: $gutter-large;
+        }
     }
   }
 }
