@@ -37,7 +37,7 @@ defaults:
     type: work
   values:
     layout: work-cover
-    cover_image:
+    cover_image: 
     work_assets:
     - ''
     - ''
@@ -73,7 +73,7 @@ description: 'Lick are a creative agency based in London.
 
 '
 logo: "/img/lick-logo.png"
-baseurl:
+baseurl: 
 url: http://www.lickcreative.com
 twitter:
   username: wearelick

@@ -1,6 +1,6 @@
 ---
 title: NFC
-image: '/img/lab/nfc.jpg'
+image: "/img/lab/nfc.jpg"
 ---
 
 Near-field communication is the technology used in contactless payment. It allows us to link consumers to information or engaging online experiences when they tap NFC-enabled POS with their smartphone. NFC tags are cheap and easy to integrate into POS. They don’t require any infrastructure investment as they leverage
