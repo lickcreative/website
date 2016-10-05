@@ -12,6 +12,9 @@ collections:
     title: Lab
     output: true
     permalink: "/retail-lab/:path"
+  lab-products:
+    title: Lab Products
+    output: false
   locations:
     title: Locations
     output: false
@@ -34,7 +37,7 @@ defaults:
     type: work
   values:
     layout: work-cover
-    cover_image: 
+    cover_image:
     work_assets:
     - ''
     - ''
@@ -54,6 +57,11 @@ defaults:
     - ''
 - scope:
     path: ''
+    type: lab-products
+  values:
+    image: "/img/hologram.jpg"
+- scope:
+    path: ''
     type: social
   values:
     is shown: false
@@ -65,7 +73,7 @@ description: 'Lick are a creative agency based in London.
 
 '
 logo: "/img/lick-logo.png"
-baseurl: 
+baseurl:
 url: http://www.lickcreative.com
 twitter:
   username: wearelick

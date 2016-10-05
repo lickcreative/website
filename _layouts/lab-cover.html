@@ -21,16 +21,3 @@ layout: default
     {% include lab-nav.html %}
   </div>
 </section>
-{% if page.images %}
-<section class="section u-vertical-space--small">
-  <div class="u-center-block u-center-block--large">
-    <div class="grid grid--gutter">
-      {% for image in page.images %}
-      <div class="grid__item grid__item--third">
-        <img class="u-object-fit" src="{{ image }}">
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-{% endif %}

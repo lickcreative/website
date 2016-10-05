@@ -1,1 +1,28 @@
-function heroSlider(){function e(){n==a&&(n=0),t[n].classList.add("js-animating"),0===n&&t[a-2].classList.remove("js-animating"),1===n&&t[a-1].classList.remove("js-animating"),n>1&&t[n-2].classList.remove("js-animating"),n++}window.setInterval(e,7e3);var t=document.getElementById("js-slideshow").getElementsByTagName("img"),a=t.length,n=1}function checkNav(){document.body.classList.contains("hamburgler-active")?closeNav():openNav()}function closeNav(){document.body.classList.remove("hamburgler-active")}function openNav(){document.body.classList.add("hamburgler-active")}function changeScroll(e){window.pageYOffset>heightDifference&&navbar.classList.remove("js-inverted"),window.pageYOffset<heightDifference&&navbar.classList.add("js-inverted")}heroSlider(),document.getElementById("hamburgler").addEventListener("click",checkNav),window.addEventListener("keyup",function(e){27==e.keyCode&&closeNav()},!1),document.querySelector(".navbar__list").addEventListener("click",checkNav);var navbar=document.getElementById("js-navbar"),cover=document.querySelector(".cover"),navbarHeight=getComputedStyle(navbar).height.split("px")[0],coverHeight=getComputedStyle(cover).height.split("px")[0],heightDifference=coverHeight-navbarHeight/2;navbar.classList.add("js-inverted"),window.addEventListener("scroll",changeScroll,!1);var defaultDuration=800,edgeOffset=100;zenscroll.setup(defaultDuration,edgeOffset);
+function checkNav() {
+    document.body.classList.contains("hamburgler-active") ? closeNav() : openNav()
+}
+
+function closeNav() {
+    document.body.classList.remove("hamburgler-active")
+}
+
+function openNav() {
+    document.body.classList.add("hamburgler-active")
+}
+
+function changeScroll(e) {
+    window.pageYOffset > heightDifference && navbar.classList.remove("js-inverted"), window.pageYOffset < heightDifference && navbar.classList.add("js-inverted")
+}
+
+document.getElementById("hamburgler").addEventListener("click", checkNav), window.addEventListener("keyup", function(e) {
+    27 == e.keyCode && closeNav()
+}, !1), document.querySelector(".navbar__list").addEventListener("click", checkNav);
+var navbar             = document.getElementById("js-navbar"),
+    cover              = document.querySelector(".cover"),
+    navbarHeight       = getComputedStyle(navbar).height.split('px')[0],
+    coverHeight        = getComputedStyle(cover).height.split('px')[0],
+    heightDifference   = (coverHeight - (navbarHeight / 2));
+navbar.classList.add("js-inverted"), window.addEventListener("scroll", changeScroll, !1);
+var defaultDuration = 800,
+    edgeOffset = 100;
+zenscroll.setup(defaultDuration, edgeOffset);
