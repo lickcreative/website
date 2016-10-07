@@ -69,9 +69,8 @@ defaults:
     url: ''
 repository: lickcreative/website
 email: contact@lickcreative.com
-description: 'Lick are a creative agency based in London.
-
-'
+description: 'Lick is about connectedness — connecting retail and brands, connecting
+  you and your shoppers, and connecting you to a full range of shopper marketing services. '
 logo: "/img/lick-logo.png"
 baseurl: 
 url: http://www.lickcreative.com
