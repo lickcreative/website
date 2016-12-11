@@ -20,6 +20,7 @@
       -webkit-transition: opacity, -webkit-transform 0.2s ease-out;
       transition: opacity, -webkit-transform 0.2s ease-out;
       transition: transform 0.2s ease-out, opacity;
+      transition: transform 0.2s ease-out, opacity, -webkit-transform 0.2s ease-out;
       will-change: transform, opacity;
     }
     &--work {
