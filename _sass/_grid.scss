@@ -1,12 +1,15 @@
 .grid {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -ms-flex-wrap: wrap;
+          -webkit-flex-wrap: wrap;
           flex-wrap: wrap;
   &--center {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
+            -webkit-justify-content: center;
             justify-content: center;
   }
   $gutter-small: 1rem;
@@ -23,10 +26,12 @@
     position: relative;
     -webkit-box-flex: 1;
     -ms-flex: 0 0 100%;
+            -webkit-flex: 0 0 100%;
             flex: 0 0 100%;
     &--icons {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 25%;
+            -webkit-flex: 0 0 25%;
             flex: 0 0 25%;
       min-height: 5rem;
       width: 10vw;
@@ -36,10 +41,12 @@
       @include flex-center;
       @include mq-small {
         -ms-flex-preferred-size: 12.5%;
+                -webkit-flex-basis: 12.5%;
                 flex-basis: 12.5%;
       }
       @include mq-medium {
         -ms-flex-preferred-size: 10%;
+                -webkit-flex-basis: 10%;
                 flex-basis: 10%;
       }
       & > a {
@@ -53,63 +60,76 @@
         height: 15rem;
         height: (50/1.5) * 1vw;
         -ms-flex-preferred-size: 50%;
+                -webkit-flex-basis: 50%;
                 flex-basis: 50%;
       }
       @include mq-medium {
         height: 15rem;
         height: (33/1.5) * 1vw;
         -ms-flex-preferred-size: 33%;
+                -webkit-flex-basis: 33%;
                 flex-basis: 33%;
       }
       @include mq-large {
         height: 15rem;
         height: (25/1.5) * 1vw;
         -ms-flex-preferred-size: 25%;
+                -webkit-flex-basis: 25%;
                 flex-basis: 25%;
       }
     }
     &--contact {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 100%;
+              -webkit-flex: 0 0 100%;
               flex: 0 0 100%;
       @include mq-small {
         -ms-flex-preferred-size: 50%;
+                -webkit-flex-basis: 50%;
                 flex-basis: 50%;
       }
       @include mq-large {
         -ms-flex-preferred-size: 33%;
+                -webkit-flex-basis: 33%;
                 flex-basis: 33%;
       }
     }
     &--quarter {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 100%;
+              -webkit-flex: 0 0 100%;
               flex: 0 0 100%;
       @include mq-small {
         -ms-flex-preferred-size: 50%;
+                -webkit-flex-basis: 50%;
                 flex-basis: 50%;
       }
       @include mq-medium {
         -ms-flex-preferred-size: 33%;
+                -webkit-flex-basis: 33%;
                 flex-basis: 33%;
       }
       @include mq-large {
         -ms-flex-preferred-size: 25%;
+                -webkit-flex-basis: 25%;
                 flex-basis: 25%;
       }
     }
     &--half {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 100%;
+              -webkit-flex: 0 0 100%;
               flex: 0 0 100%;
       @include mq-small {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 50%;
+                -webkit-flex: 0 0 50%;
                 flex: 0 0 50%;
       }
       @include mq-large {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 33%;
+                -webkit-flex: 0 0 33%;
                 flex: 0 0 33%;
       }
     }

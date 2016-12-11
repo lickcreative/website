@@ -21,6 +21,7 @@ input[type="submit"] {
   cursor: pointer;
   color: $white;
   background: $brand-color;
+  -webkit-transition: background-color 0.2s ease;
   transition: background-color 0.2s ease;
   border: none;
   &:hover {
