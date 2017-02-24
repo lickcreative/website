@@ -3,7 +3,7 @@ title: About
 date: 2016-08-16 10:08:00 Z
 published: false
 position: 1
-image: img/group-draft.jpg
+video: https://www.youtube.com/embed/lwk1DogcPmU
 ---
 
 <div class="u-center-block u-center-block--small
@@ -13,6 +13,11 @@ image: img/group-draft.jpg
   With our experience, insights and analysis we help you understand and speak with your customers at every touch point in their shopper journey.
 
   Building on insights and our existing relationships we provide integrated end-to-end shopping experiences.
+</div>
+<div class="u-center-block u-center-block--small u-vertical-space">
+  <div class="u-16-9">
+    <iframe width="100%" height="100%" src="{{ page.video }}" frameborder="0" allowfullscreen></iframe>
+  </div>
 </div>
 <div class="u-center-block u-center-block--large">
   <div class="grid grid--center grid--gutter">
