@@ -2,6 +2,7 @@
 title: LinkedIn
 is shown: true
 image: "/img/social/linkedin.svg"
-link: http://linkedin.com/company/lick-creative
+url: http://linkedin.com/company/lickcreative
+link: http://linkedin.com/company/lickcreative
 ---
 
