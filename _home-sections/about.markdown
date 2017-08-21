@@ -3,7 +3,7 @@ title: About
 date: 2016-08-16 10:08:00 Z
 published: false
 position: 1
-video: https://www.youtube.com/embed/tb9HxpQw2V8
+video: https://youtu.be/CEp28Y5IFN8
 ---
 
 <div class="u-center-block u-center-block--small
