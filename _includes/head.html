@@ -36,5 +36,7 @@
   <noscript><link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}"></noscript>
 
   {% seo %}
-  {% include analytics.html %}
+    {% if jekyll.environment == 'production' %}
+    {% include analytics.html %}
+    {% endif %}
 </head>
